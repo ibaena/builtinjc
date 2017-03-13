@@ -1,0 +1,25 @@
+/*********************************
+         BOX STYLES
+*********************************/
+#slideB {
+    background: purple;
+    height: 100vh;
+    width: 100%;
+    padding: 0;
+
+    .viewports {
+        height: 100vh;
+    }
+
+    .viewports:first-child {
+        background: red;
+    }
+
+    .viewports:nth-child(2) {
+        background: lightblue;
+    }
+
+    .viewports:nth-child(3) {
+        background: lightgreen;
+    }
+}
