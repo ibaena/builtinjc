@@ -32,7 +32,7 @@ export default class SlideA extends Component {
     ))
   }
   componentDidMount(){
-
+      $('#carousel-example-generic').bind('mousewheel', function(e){$(this).carousel('next');});
   }
 
   render() {
