@@ -23,14 +23,17 @@
     }
 
     .viewports:first-child {
-        background: lightyellow;
+        background-image:url('/images/golf.png');
+        background-size: cover;
     }
 
     .viewports:nth-child(2) {
-        background: pink;
+        background-image:url('/images/basketball.png');
+        background-size: cover;
     }
 
     .viewports:nth-child(3) {
-        background: lightgray;
+        background-image:url('/images/shoe.png');
+        background-size: cover;
     }
 }
