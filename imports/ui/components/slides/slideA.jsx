@@ -32,7 +32,14 @@ export default class SlideA extends Component {
     ))
   }
   componentDidMount(){
-      $('#carousel-example-generic').bind('mousewheel', function(e){$(this).carousel('next');});
+      $('#carousel-example-generic').bind('mousewheel DOMMouseScroll', function(e){
+            if(e.originalEvent.wheelDelta > 0 || e.originalEvent.detail < 0){
+                $(this).carousel('prev');
+            }
+            else{
+                $(this).carousel('next');
+            }
+        });
   }
 
   render() {
