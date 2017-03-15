@@ -38,7 +38,7 @@
             font-weight: 100;
             opacity: 0;
             z-index: -1;
-            transition: all 0.2s ease-in-out;
+            transition: all 0.5s ease-in-out;
         }
 
         i {
@@ -48,12 +48,12 @@
 
     #right-nav-btn:hover {
         background: black;
-        transition: all 0.2s ease-in-out;
+        transition: all 0.5s ease-in-out;
 
         .hvr-overlay-right {
             width: 160px;
             opacity: 1;
-            transition: all 0.3s ease-in-out;
+            transition: all 0.5s ease-in-out;
         }
     }
 
@@ -86,7 +86,7 @@
             font-weight: 100;
             opacity: 0;
             z-index: -1;
-            transition: all 0.2s ease-in-out;
+            transition: all 0.5s ease-in-out;
             text-align: right;
         }
 
@@ -97,12 +97,12 @@
 
     #left-nav-btn:hover {
         background: black;
-        transition: all 0.2s ease-in-out;
+        transition: all 0.5s ease-in-out;
 
         .hvr-overlay-left {
             width: 160px;
             opacity: 1;
-            transition: all 0.3s ease-in-out;
+            transition: all 0.5s ease-in-out;
         }
     }
 }
