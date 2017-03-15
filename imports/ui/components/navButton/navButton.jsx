@@ -28,7 +28,7 @@ export default class NavButton extends Component {
 
     })
     $('#left-nav-btn').on('click', function() {
- 
+
     })
 
     this.scrollTo();
@@ -39,9 +39,11 @@ export default class NavButton extends Component {
       <div id="navbtn">
           <ol className="carousel-indicators">
               <div id="left-nav-btn">
+                <div className="hvr-overlay-left">BACK</div>
                   <li data-target="#carousel-example-generic" data-slide-to="0" className="active"><i className="fa fa-long-arrow-left" aria-hidden="true"></i></li>
               </div>
               <div id="right-nav-btn">
+                <div className="hvr-overlay-right">MORE</div>
                   <li data-target="#carousel-example-generic" data-slide-to="1"><i className="fa fa-long-arrow-right" aria-hidden="true"></i></li>
               </div>
           </ol>

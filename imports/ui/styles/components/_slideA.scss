@@ -6,34 +6,71 @@
     width: 100%;
     padding: 0;
 
-    .viewports {
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    .img-wrapper {
+        padding: 0;
+        overflow: hidden;
 
-        .media-box {
-            display: block;
-            margin: 0 auto;
+        .viewports {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
 
-            .menu-title {
-                text-align: center;
+            .media-box {
+                display: block;
+                margin: 0 auto;
+                display: block;
+                margin: 0 auto;
+                white-space: normal;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                padding: 30vh 3.125rem;
+                width: 100%;
+                height: auto;
+                color: #fff;
+                -webkit-transform: translate3d(0,0,0);
+                transform: translate3d(0,0,0);
+
+                .menu-title {
+                    text-align: center;
+                }
             }
         }
     }
 
-    .viewports:first-child {
-        background-image:url('/images/golf.png');
-        background-size: cover;
+    .viewports:hover {
+        filter: grayscale(80%);
+        transform: scale(1.1);
+        transition: all 0.2s ease-in;
     }
 
-    .viewports:nth-child(2) {
-        background-image:url('/images/basketball.png');
-        background-size: cover;
+    .viewports {
+        transform: scale(1);
+        transition: all 0.2s ease-in;
     }
 
-    .viewports:nth-child(3) {
-        background-image:url('/images/shoe.png');
-        background-size: cover;
+    .img-wrapper:first-child {
+        .viewports {
+            background-image: url('/images/golf.png');
+            background-size: 100vw 100%;
+            background-repeat: no-repeat;
+        }
+    }
+
+    .img-wrapper:nth-child(2) {
+        .viewports {
+            background-image: url('/images/basketball.png');
+            background-size: 100vw 100%;
+            background-repeat: no-repeat;
+        }
+    }
+
+    .img-wrapper:nth-child(3) {
+        .viewports {
+            background-image: url('/images/shoe.png');
+            background-size: 100vw 100%;
+            background-repeat: no-repeat;
+        }
     }
 }
