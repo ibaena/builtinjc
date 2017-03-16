@@ -24,7 +24,7 @@ export default class FullNav extends Component {
             <p className="menu-title-top">{item.name}</p>
             <p className="menu-title-btm">{item.name}</p>
             <p className="btm-text">{item.info}</p>
-            <p className="btm-text">Go to {item.smallName}</p>
+            <p className="btm-text btm-text-lg">Go to {item.smallName}</p>
           </a>
           </div>
         </div>
