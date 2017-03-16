@@ -8,13 +8,6 @@ export default class SlideA extends Component {
     super();
 
   }
-  centerBox() {
-    $('#box').css({
-       position:'absolute',
-       left: ($(window).width() - $('#box').outerWidth())/2,
-       top: ($('#home').height() - $('#box').outerHeight())/2
-     });
-  }
   buildThirds() {
     return [
       {_id:1, name:'one'},
@@ -36,6 +29,9 @@ export default class SlideA extends Component {
     ))
   }
   componentDidMount(){
+    setTimeout(function(){
+      $('#slideA').addClass('fade-in');
+    },100)
     $('#carousel-example-generic').carousel({
     pause: true,
     interval: false

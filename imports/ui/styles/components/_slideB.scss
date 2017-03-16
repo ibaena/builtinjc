@@ -2,24 +2,112 @@
          BOX STYLES
 *********************************/
 #slideB {
-    background: purple;
     height: 100vh;
     width: 100%;
     padding: 0;
 
+    .img-wrapper {
+        padding: 0;
+        overflow: hidden;
+
+        .viewports {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .media-box {
+                display: block;
+                margin: 0 auto;
+                display: block;
+                margin: 0 auto;
+                white-space: normal;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                padding: 30vh 3.125rem;
+                width: 100%;
+                height: auto;
+                color: #fff;
+                -webkit-transform: translate3d(0,0,0);
+                transform: translate3d(0,0,0);
+
+                .menu-title {
+                    text-align: center;
+                    font-size: 5em;
+                    position: relative;
+                    top: 50px;
+                    transition: all 0.4s ease-in-out;
+                }
+
+                .sub-text {
+                    text-align: center;
+                    opacity: 0;
+                    transition: all 0.4s ease-in-out;
+                }
+
+                .keyword-text {
+                    text-align: center;
+                    transition: all 0.4s ease-in-out;
+                    position: relative;
+                    top: 10px;
+                }
+            }
+        }
+    }
+
+    .viewports:hover {
+        filter: grayscale(80%);
+        transform: scale(1.1);
+        transition: all 0.2s ease-in;
+
+        .media-box {
+            .menu-title {
+                position: relative;
+                top: -20px;
+                transition: all 0.4s ease-in-out;
+            }
+
+            .sub-text {
+                opacity: 1;
+                transition: all 0.4s ease-in-out;
+            }
+
+            .keyword-text {
+                text-align: center;
+                transition: all 0.4s ease-in-out;
+                position: relative;
+                top: 40px;
+            }
+        }
+    }
+
     .viewports {
-        height: 100vh;
+        transform: scale(1);
+        transition: all 0.2s ease-in;
     }
 
-    .viewports:first-child {
-        background: red;
+    .img-wrapper:first-child {
+        .viewports {
+            background-image: url('/images/golf.png');
+            background-size: 100vw 100%;
+            background-repeat: no-repeat;
+        }
     }
 
-    .viewports:nth-child(2) {
-        background: lightblue;
+    .img-wrapper:nth-child(2) {
+        .viewports {
+            background-image: url('/images/basketball.png');
+            background-size: 100vw 100%;
+            background-repeat: no-repeat;
+        }
     }
 
-    .viewports:nth-child(3) {
-        background: lightgreen;
+    .img-wrapper:nth-child(3) {
+        .viewports {
+            background-image: url('/images/shoe.png');
+            background-size: 100vw 100%;
+            background-repeat: no-repeat;
+        }
     }
 }

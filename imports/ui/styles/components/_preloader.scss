@@ -1,0 +1,27 @@
+/************************
+    Preloader Styles
+************************/
+#preloader {
+  min-height: 100vh;
+  width:100%;
+  background: #18191b;
+  opacity: 1;
+  transform: scale(1);
+
+  .preload-text {
+    font-size: 10em;
+    color: white;
+    text-align: center;
+  }
+}
+.pre-fade {
+  transition: all 1.2s ease-in-out !important;
+  opacity: 0 !important;
+  transform: scale(.2) !important;
+}
+
+.fade-in {
+  transition: all 1.2s ease-in-out !important;
+  opacity: 1 !important;
+  transform: scale(1) !important;
+}

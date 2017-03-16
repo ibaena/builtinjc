@@ -1,0 +1,108 @@
+/************************
+    Home Page Styles
+************************/
+#cases {
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    white-space: nowrap;
+
+    #right-nav-btn {
+        border-radius: 50%;
+        position: fixed;
+        color: white;
+        z-index: 999;
+        bottom: 50px;
+        right: 100px;
+        padding: 0.9em;
+        height: 50px;
+        width: 50px;
+        text-align: center;
+        cursor: pointer;
+        background: rgba(0, 0, 0, 0.2);
+        transition: all 0.5s ease-in-out;
+        z-index: 10;
+
+        .hvr-overlay-right {
+            display: inline-block;
+            right: 0;
+            top: 0;
+            width: 0;
+            height: 50px;
+            border-radius: 25px;
+            background: rgba(0, 0, 0, 0.2);
+            position: absolute;
+            padding: 0.6em 2em 0.6em 0.6em;
+            font-size: 18px;
+            color: white;
+            font-weight: 100;
+            opacity: 0;
+            z-index: -1;
+            transition: all 0.5s ease-in-out;
+        }
+
+        i {
+            font-size: 1.5em;
+        }
+    }
+
+    #right-nav-btn:hover {
+        background: black;
+        transition: all 0.5s ease-in-out;
+
+        .hvr-overlay-right {
+            width: 160px;
+            opacity: 1;
+            transition: all 0.5s ease-in-out;
+        }
+    }
+
+    #left-nav-btn {
+        background: rgba(0, 0, 0, 0.2);
+        border-radius: 50%;
+        position: fixed;
+        color: white;
+        z-index: 999;
+        bottom: 50px;
+        left: 100px;
+        padding: 0.9em;
+        height: 50px;
+        width: 50px;
+        text-align: center;
+        cursor: pointer;
+
+        .hvr-overlay-left {
+            display: inline-block;
+            left: 0;
+            top: 0;
+            width: 0;
+            height: 50px;
+            border-radius: 25px;
+            background: rgba(0, 0, 0, 0.2);
+            position: absolute;
+            padding: 0.6em 2em 0.6em 0.6em;
+            font-size: 18px;
+            color: white;
+            font-weight: 100;
+            opacity: 0;
+            z-index: -1;
+            transition: all 0.5s ease-in-out;
+            text-align: right;
+        }
+
+        i {
+            font-size: 1.5em;
+        }
+    }
+
+    #left-nav-btn:hover {
+        background: black;
+        transition: all 0.5s ease-in-out;
+
+        .hvr-overlay-left {
+            width: 160px;
+            opacity: 1;
+            transition: all 0.5s ease-in-out;
+        }
+    }
+}

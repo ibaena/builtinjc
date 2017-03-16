@@ -17,7 +17,15 @@ export default class SlideB extends Component {
   }
   renderColB() {
     return this.buildThirdsB().map((item) => (
-        <div className="col-md-4 viewports" key={item._id}>{item.name}</div>
+      <div className="col-md-4 col-sm-12 img-wrapper" key={item._id}>
+        <div className="viewports">
+          <div className="col-md-12 media-box">
+            <h1 className="menu-title">Title</h1>
+            <p className="sub-text">Sub</p>
+            <p className="keyword-text">Keyword</p>
+          </div>
+        </div>
+      </div>
     ))
   }
 

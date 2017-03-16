@@ -5,6 +5,8 @@
     height: 100vh;
     width: 100%;
     padding: 0;
+    opacity: 0;
+    transform: scale(.2);
 
     .img-wrapper {
         padding: 0;
@@ -34,6 +36,23 @@
 
                 .menu-title {
                     text-align: center;
+                    font-size: 5em;
+                    position: relative;
+                    top: 50px;
+                    transition: all 0.4s ease-in-out;
+                }
+
+                .sub-text {
+                    text-align: center;
+                    opacity: 0;
+                    transition: all 0.4s ease-in-out;
+                }
+
+                .keyword-text {
+                    text-align: center;
+                    transition: all 0.4s ease-in-out;
+                    position: relative;
+                    top: 10px;
                 }
             }
         }
@@ -43,6 +62,26 @@
         filter: grayscale(80%);
         transform: scale(1.1);
         transition: all 0.2s ease-in;
+
+        .media-box {
+            .menu-title {
+                position: relative;
+                top: -20px;
+                transition: all 0.4s ease-in-out;
+            }
+
+            .sub-text {
+                opacity: 1;
+                transition: all 0.4s ease-in-out;
+            }
+
+            .keyword-text {
+                text-align: center;
+                transition: all 0.4s ease-in-out;
+                position: relative;
+                top: 40px;
+            }
+        }
     }
 
     .viewports {
