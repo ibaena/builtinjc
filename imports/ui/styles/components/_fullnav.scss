@@ -72,22 +72,82 @@
                 justify-content: center;
                 align-items: center;
 
-                .menu-link {
-                    text-decoration: none;
+                .media-box {
+                    padding-left: 5em;
+                    padding-right: 5em;
 
-                    .menu-title {
-                        font-size: 4em;
-                        color: white;
-                        border-bottom: 5px solid white;
-                        line-height: 10px;
+                    .menu-link {
+                        text-decoration: none;
+                        display: block;
+
+                        .menu-title-top {
+                            font-size: 3em;
+                            color: white;
+                            position: relative;
+                            bottom: 1em;
+                            opacity: 0;
+                            transition: all .3s ease-in-out;
+                        }
+
+                        .menu-title-btm {
+                            font-size: 3em;
+                            color: white;
+                            position: relative;
+                            opacity: 1;
+                            transition: all .3s ease-in-out;
+                            bottom: 0;
+                        }
+                        .btm-text {
+                          font-size: 1em;
+                          color: white;
+                          position: relative;
+                          opacity: 0;
+                          top:4em;
+                          transition: all .3s ease-in-out;
+
+                        }
                     }
-                }
+                    .menu-link:hover {
 
-                .menu-link:hover {
-                    .menu-title {
-                        color: gray;
-                        border-bottom: 5px solid gray;
-                        transition: all 0.2s ease-in;
+                        .menu-title-top {
+                            position: relative;
+                            bottom: -1.5em;
+                            opacity: 1;
+                            transition: all .3s ease-in-out;
+                        }
+
+                        .menu-title-btm {
+                            position: relative;
+                            opacity: 0;
+                            bottom:-1em;
+                            transition: all .3s ease-in-out;
+                        }
+                        .btm-text {
+                          position: relative;
+                          opacity: 1;
+                          top: 1em;
+                          transition: all .3s ease-in-out;
+
+                        }
+                    }
+
+                    #link-3 {
+                        .menu-title {
+                            border-bottom: 5px solid white;
+                        }
+                    }
+
+                    #link-3:hover {
+                        .menu-title {
+                            border-bottom: 5px solid gray;
+                        }
+                    }
+
+                    .menu-link:hover {
+                        .menu-title {
+                            color: gray;
+                            transition: all 0.2s ease-in;
+                        }
                     }
                 }
             }

@@ -10,9 +10,9 @@ export default class FullNav extends Component {
   }
   navThirds() {
     return [
-      {_id:1, name:'CASES', src:'/cases'},
-      {_id:2, name:'ABOUT', src:'/about'},
-      {_id:3, name:'CONTACT', src:'/contact'},
+      {_id:1, smallName:'Cases', name:'CASES', src:'/cases', info:'I let my work speak for itself.'},
+      {_id:2, smallName:'About', name:'ABOUT', src:'/about', info:'I am a Front End Developer with Agency expirience.'},
+      {_id:3, smallName:'Contact', name:'CONTACT', src:'/contact', info:'Want to work together? Lets get in touch.'},
     ]
   }
   renderNav() {
@@ -21,7 +21,10 @@ export default class FullNav extends Component {
         <div className="nav-viewports">
           <div className="col-md-12 media-box">
             <a href="" className="menu-link" id={"link-"+item._id}>
-            <span className="menu-title">{item.name}</span>
+            <p className="menu-title-top">{item.name}</p>
+            <p className="menu-title-btm">{item.name}</p>
+            <p className="btm-text">{item.info}</p>
+            <p className="btm-text">Go to {item.smallName}</p>
           </a>
           </div>
         </div>
@@ -86,7 +89,7 @@ export default class FullNav extends Component {
           'transition':'all 1s ease-in-out'
         });
         $('.nav-wrapper').css({
-          'z-index':'1'
+          'z-index':'99'
         });
       }else {
         $('.nav-col').css({
