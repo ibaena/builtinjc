@@ -11,6 +11,9 @@ export default class Preloader extends Component {
   componentDidMount(){
     this.centerBox();
     setTimeout(function(){
+      $('.preload-text').addClass('pre-fade-up');
+    },600)
+    setTimeout(function(){
       $('#preloader').addClass('pre-fade');
     },3000)
     setTimeout(function(){
