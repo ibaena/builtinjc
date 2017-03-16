@@ -37,7 +37,7 @@
             color: white;
             font-weight: 100;
             opacity: 0;
-            transition: all .5s ease-in-out;
+            transition: all 0.5s ease-in-out;
         }
     }
 
@@ -46,11 +46,11 @@
             transform: rotate(90deg);
             transition: all 0.2s ease-in;
         }
-        .hvr-overlay {
-          width:160px;
-          opacity: 1;
-          transition: all .5s ease-in-out;
 
+        .hvr-overlay {
+            width: 160px;
+            opacity: 1;
+            transition: all 0.5s ease-in-out;
         }
     }
 
@@ -71,6 +71,25 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
+
+                .menu-link {
+                    text-decoration: none;
+
+                    .menu-title {
+                        font-size: 4em;
+                        color: white;
+                        border-bottom: 5px solid white;
+                        line-height: 10px;
+                    }
+                }
+
+                .menu-link:hover {
+                    .menu-title {
+                        color: gray;
+                        border-bottom: 5px solid gray;
+                        transition: all 0.2s ease-in;
+                    }
+                }
             }
         }
     }

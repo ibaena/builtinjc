@@ -31,7 +31,8 @@ export default class SlideA extends Component {
   componentDidMount(){
     setTimeout(function(){
       $('#slideA').addClass('fade-in');
-    },100)
+    },100);
+
     $('#carousel-example-generic').carousel({
     pause: true,
     interval: false

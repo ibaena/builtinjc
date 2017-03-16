@@ -10,9 +10,9 @@ export default class FullNav extends Component {
   }
   navThirds() {
     return [
-      {_id:1, name:'Item 1'},
-      {_id:2, name:'Item 2'},
-      {_id:3, name:'Item 3'},
+      {_id:1, name:'CASES', src:'/cases'},
+      {_id:2, name:'ABOUT', src:'/about'},
+      {_id:3, name:'CONTACT', src:'/contact'},
     ]
   }
   renderNav() {
@@ -20,17 +20,67 @@ export default class FullNav extends Component {
       <div className="col-md-4 col-sm-12 nav-col" key={item._id}>
         <div className="nav-viewports">
           <div className="col-md-12 media-box">
-            <h1 className="menu-title">{item._id}</h1>
+            <a href="" className="menu-link" id={"link-"+item._id}>
+            <span className="menu-title">{item.name}</span>
+          </a>
           </div>
         </div>
       </div>
     ))
   }
+  triggerLinks() {
+    $('.menu-link').on('click', function() {
+      let clicked = this.id;
+      switch(clicked){
+        case 'link-1':
+        window.showNav = !window.showNav;
+        $('.nav-col').css({
+          "width":"0px",
+          'transition':'all 1s ease-in-out'
+        });
+        setTimeout(function(){
+          $('.nav-wrapper').css({
+            'z-index':'-1'
+          });
+          FlowRouter.go('/cases');
+        },1100);
+        break;
+
+        case 'link-2':
+        window.showNav = !window.showNav;
+        $('.nav-col').css({
+          "width":"0px",
+          'transition':'all 1s ease-in-out'
+        });
+        setTimeout(function(){
+          $('.nav-wrapper').css({
+            'z-index':'-1'
+          });
+          FlowRouter.go('/about');
+        },1100);
+        break;
+
+        case 'link-3':
+        window.showNav = !window.showNav;
+        $('.nav-col').css({
+          "width":"0px",
+          'transition':'all 1s ease-in-out'
+        });
+        setTimeout(function(){
+          $('.nav-wrapper').css({
+            'z-index':'-1'
+          });
+          FlowRouter.go('/contact');
+        },1100);
+        break;
+      }
+    })
+  }
   fireMenu() {
-    let showNav = false;
+    window.showNav = false;
     $('#fw-nav-btn').on('click', function() {
-      showNav = !showNav;
-      if(showNav === true) {
+      window.showNav = !window.showNav;
+      if(window.showNav === true) {
         $('.nav-col').css({
           "width":"33.3333%",
           'transition':'all 1s ease-in-out'
@@ -54,6 +104,7 @@ export default class FullNav extends Component {
 
   componentDidMount() {
       this.fireMenu();
+      this.triggerLinks();
   }
 
   render() {
