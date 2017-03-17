@@ -33,7 +33,11 @@ export default class FullNav extends Component {
   }
   triggerLinks() {
     $('.menu-link').on('click', function() {
+      let currentSpace = $(location).attr('href');
       let clicked = this.id;
+
+      console.log(currentSpace);
+
       switch(clicked){
         case 'link-1':
         window.showNav = !window.showNav;

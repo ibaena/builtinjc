@@ -1,0 +1,53 @@
+import React, { Component } from 'react';
+
+// Intro component
+export default class GetInTouch extends Component {
+  // Note: In ES6, constructor() === componentWillMount() in React ES5
+  constructor() {
+    super();
+
+  }
+  componentDidMount(){
+    setTimeout(function(){
+      $('#getInTouch').addClass('fade-in');
+    },100);
+  }
+
+
+  render() {
+    return (
+      <div id="getInTouch" className="container-fluid">
+        <div className="col-sm-12 col-md-8 c-slide"></div>
+        <div className="col-sm-12 col-md-4 c-info">
+
+          <ul className="col-sm-12 col-sm-offset-0 col-md-10 col-md-offset-1" id="contact-list">
+            <h3 className="contact-header">Contact</h3>
+            <li className="contact-list-item">
+              <h5 className="list-group-header">Email</h5>
+              <div className="list-group"><a href="mailto: ivan.baena04@gmail.com" className="contact-link">ivan[dot]baena[at]gmail[dot]com</a></div>
+            </li>
+            <li className="contact-list-item">
+              <h5 className="list-group-header">Telephone</h5>
+              <div className="list-group">
+                +1-555-555-5555
+                <div className="censor"></div>
+              </div>
+            </li>
+            <li className="contact-list-item">
+              <h5 className="list-group-header">Location</h5>
+              <div className="list-group">New York City</div>
+              <div className="list-group">New York</div>
+              <div className="list-group">USA</div>
+            </li>
+            <li className="contact-list-item">
+              <h5 className="list-group-header">Social</h5>
+              <div className="list-group">!</div>
+              <div className="list-group">!</div>
+              <div className="list-group">!</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    );
+  }
+}
