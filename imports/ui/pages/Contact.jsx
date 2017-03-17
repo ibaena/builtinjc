@@ -9,4 +9,5 @@ export const Contact = () =>
 <div id="contact" className="">
   <FullNav />
   <GetInTouch />
+
 </div>
