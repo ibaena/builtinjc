@@ -31,7 +31,7 @@
                 margin-bottom: 20px;
 
                 .list-group-header {
-                    font-size: calc(1.2em + 2px);
+                    font-size: calc(1.2em + 6px);
                     margin-top: 5px;
                     margin-bottom: 7px;
                     font-weight: 500;
@@ -39,13 +39,15 @@
 
                 .list-group {
                     margin-top: 2px;
-                    margin-bottom: 2px;
-                    font-size: calc(1.1em + 0px);
-                    font-weight: 400;
+                    margin-bottom: 3px;
+                    font-size: calc(1.1em + 2px);
+                    font-weight: 300;
+                    padding-top: 1px;
+                    padding-bottom: 1px;
 
                     .contact-link {
                         text-decoration: none;
-                        color: black
+                        color: black;
                     }
 
                     .censor {
@@ -59,4 +61,45 @@
             }
         }
     }
+}
+.special-fx {
+  text-decoration: none;
+  color: gray;
+  transition: .3s all linear;
+  position: relative;
+  padding: .3em 0;
+  &:before, &:after {
+    content: "";
+    height: 1px;
+    width: 0%;
+    background: black;
+    position: absolute;
+    bottom: 0;
+    transition: .2s all linear;
+  }
+  &:before {
+    left: 50%;
+  }
+  &:after {
+    right: 50%;
+  }
+
+  &:hover {
+    color: black;
+    &:before, &:after {
+      width: 100%;
+    }
+     &:before {
+      left: 0%;
+    }
+    &:after {
+      right: 0%;
+    }
+  }
+  &:active, &:focus {
+    color: darken(black, 10%);
+    &:before, &:after {
+      background: darken(black, 10%);
+    }
+  }
 }

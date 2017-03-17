@@ -24,7 +24,7 @@ export default class GetInTouch extends Component {
             <h3 className="contact-header">Contact</h3>
             <li className="contact-list-item">
               <h5 className="list-group-header">Email</h5>
-              <div className="list-group"><a href="mailto: ivan.baena04@gmail.com" className="contact-link">ivan[dot]baena[at]gmail[dot]com</a></div>
+              <div className="list-group"><a href="mailto: ivan.baena04@gmail.com" className="contact-link special-fx">ivan[dot]baena[at]gmail[dot]com</a></div>
             </li>
             <li className="contact-list-item">
               <h5 className="list-group-header">Telephone</h5>
@@ -41,9 +41,9 @@ export default class GetInTouch extends Component {
             </li>
             <li className="contact-list-item">
               <h5 className="list-group-header">Social</h5>
-              <div className="list-group">!</div>
-              <div className="list-group">!</div>
-              <div className="list-group">!</div>
+              <div className="list-group"><a href="https://github.com/ibaena" target="_blank" className="contact-link special-fx">Github</a></div>
+              <div className="list-group"><a href="https://codepen.io/ibaena/" target="_blank" className="contact-link special-fx">CodePen</a></div>
+              <div className="list-group"><a href="https://twitter.com/NotThefakeIB" target="_blank" className="contact-link special-fx">Twitter</a></div>
             </li>
           </ul>
         </div>
