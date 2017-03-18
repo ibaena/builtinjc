@@ -8,47 +8,28 @@ export default class SlideC extends Component {
     super();
 
   }
-  buildThirds() {
+  buildVideo() {
     return [
-      {_id:2, name:'two', class:'item'},
-      {_id:3, name:'three', class:'item'},
+      {_id:1, name:'IFRAME'},
     ]
   }
   renderCol() {
-
-
-
-    return this.buildThirds().map((item) => (
-      <div className="item" key={item._id}>
-      <div className="col-md-12 col-sm-12 img-wrapper" >
+    return this.buildVideo().map((item) => (
+      <div className="col-md-12 col-sm-12 iframe-wrapper" key={item._id}>
         <div className="viewports">
-          <div className="col-md-12 media-box">
-            <h1 className="menu-title">Title</h1>
-            <p className="sub-text">Sub</p>
-            <p className="keyword-text">Keyword</p>
+          <div className="embed-responsive embed-responsive-16by9 cs-iframe">
+            <video className="embed-responsive-item cs-video" autoPlay loop >
+              <source src="/videos/traffic.mp4" type="video/mp4" />
+            </video>
           </div>
         </div>
       </div>
-      </div>
     ))
   }
-  componentDidMount(){
-    /*setTimeout(function(){
-      $('#slideC').addClass('fade-in');
-    },100);*/
 
-    $('#carousel-example-generic').carousel({
-    pause: true,
-    interval: false
-});
-      $('#carousel-example-generic').bind('mousewheel DOMMouseScroll', function(e){
-            if(e.originalEvent.wheelDelta > 0 || e.originalEvent.detail < 0){
-                $(this).carousel('prev');
-            }
-            else{
-                $(this).carousel('next');
-            }
-        });
+  componentDidMount(){
+
+
   }
 
   render() {

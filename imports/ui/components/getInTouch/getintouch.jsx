@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 
 import SlideC from '../slides/slideC.jsx';
-import SlideA from '../slides/slideA.jsx';
-import SlideB from '../slides/slideB.jsx';
-import NavButton from '..//navButton/navButton.jsx';
+
 
 // Intro component
 export default class GetInTouch extends Component {
@@ -23,21 +21,9 @@ export default class GetInTouch extends Component {
     return (
       <div id="getInTouch" className="container-fluid">
         <div className="col-sm-12 col-md-8 c-slide">
-          <div id="carousel-example-generic" className="carousel slide" data-ride="carousel">
-                  <NavButton />
-              <div className="carousel-inner" role="listbox">
-                  <div className="item active">
-                      <SlideA />
-                  </div>
-                  <div className="item">
-                      <SlideB />
-                  </div>
-              </div>
-
-          </div>
-      </div>
+          <SlideC />
+        </div>
         <div className="col-sm-12 col-md-4 c-info">
-
           <ul className="col-sm-12 col-sm-offset-0 col-md-10 col-md-offset-1" id="contact-list">
             <h3 className="contact-header">Contact</h3>
             <li className="contact-list-item">
