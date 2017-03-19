@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import FullNav from '../../ui/components/navButton/fullNav.jsx';
+import Parallax from '../../ui/components/parallax/parallax.jsx';
 
 
 
@@ -8,5 +9,5 @@ import FullNav from '../../ui/components/navButton/fullNav.jsx';
 export const About = () =>
 <div id="home" className="">
   <FullNav />
-  About
+  <Parallax />
 </div>
