@@ -32,11 +32,10 @@ export default class Parallax extends Component {
 
   render() {
     return (
-      <div className="container-fluid" id="parallax-wrapper">
-      <div className="col-sm-12 col-md-4 p-info">
+      <div className="container-fluid" id="parallax-wrapper" >
 
-      </div>
       <div id="parallax"  data-scrollbar>
+        <div className="col-sm-12 col-md-4 p-info"></div>
         <div className="col-sm-12 col-md-8 p-slide" >
           <div className="color-bg col-sm-12 col-md-7" >
               <p className="about-header">I build things.</p>
@@ -66,11 +65,16 @@ export default class Parallax extends Component {
                 <label>Content</label>
                 <p className="alpha-text">reat experiences occur when relevance, insight, and vision meet. Working side by side with our clients, and based on a deep and thorough understanding of their business and challenges, we help them get perspective, take action and be successful in an ever-changing world.</p>
               </div>
+              <div className="alphas">
+                <label>I.T.</label>
+                <p className="alpha-text">reat experiences occur when relevance, insight, and vision meet. Working side by side with our clients, and based on a deep and thorough understanding of their business and challenges, we help them get perspective, take action and be successful in an ever-changing world.</p>
+              </div>
             </div>
           </div>
         </div>
-
+      <div className="col--sm-12 col-md-12 black">Black</div>
       </div>
+
     </div>
     );
   }

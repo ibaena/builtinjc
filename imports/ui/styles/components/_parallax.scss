@@ -53,10 +53,11 @@
             }
 
             .secondary {
-                height: 100vh;
-                background: black;
+                min-height: 100vh;
+                background: #171719;
                 padding: 0;
                 color: white;
+                padding: calc(3em + 2px);
 
                 .add-p-top {
                     text-align: center;
@@ -74,7 +75,7 @@
 
 
                     .alphas {
-                        padding: calc(3em + 8px) 6em calc(2em + 8px) 2em;
+                        padding: calc(1em + 4px) 3em calc(1em + 8px) 2em;
 
                         label {
                             font-size: calc(1.5em + 8px);
@@ -87,6 +88,9 @@
                             letter-spacing: 1px;
                             text-align: justify;
                         }
+                    }
+                    .alphas:first-child {
+                      padding-top: 10em;
                     }
                 }
             }
