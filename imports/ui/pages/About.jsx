@@ -7,7 +7,7 @@ import Parallax from '../../ui/components/parallax/parallax.jsx';
 
 // This component - represents a single page
 export const About = () =>
-<div id="home" className="">
+<div id="about" className="">
   <FullNav />
   <Parallax />
 </div>
