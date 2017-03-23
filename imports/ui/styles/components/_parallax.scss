@@ -73,7 +73,6 @@
                 .add-p-top-b {
                     padding-top: calc(3em + 5px);
 
-
                     .alphas {
                         padding: calc(1em + 4px) 3em calc(1em + 8px) 2em;
 
@@ -89,24 +88,33 @@
                             text-align: justify;
                         }
                     }
+
                     .alphas:first-child {
-                      padding-top: 10em;
+                        padding-top: 10em;
                     }
                 }
             }
         }
+        .third-para {
+          position: absolute;
+          background: purple;
+          height: 100vh;
+          
+        }
     }
 
     .p-info {
-        background-image: url('/images/mouse.jpg');
+        background-image: url("images/mouse.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         left: 0;
         position: fixed;
+        background-attachment: fixed;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 }
 /*Grown Animation*/
@@ -137,4 +145,11 @@ scrollbar .scrollbar-track-y {
     height: 100%;
     background: transparent !important;
     color: transparent !important;
+}
+
+.black {
+    height: 100vh;
+    bottom: 0;
+    position: fixed;
+    background: black;
 }

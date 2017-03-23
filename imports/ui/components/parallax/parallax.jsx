@@ -27,15 +27,25 @@ export default class Parallax extends Component {
       'overscrollEffect':'bounce',
       'damping':'.05'
     });
+    let height = $('.p-slide').height();
+    $('.third-para').css({
+      'top': height
+    })
+    window.on('resize', function() {
+      let height = $('.p-slide').height();
+      $('.third-para').css({
+        'top': height
+      })
+    })
   }
 
 
   render() {
     return (
-      <div className="container-fluid" id="parallax-wrapper" >
-
-      <div id="parallax"  data-scrollbar>
+      <div className="container-fluid" id="parallax-wrapper">
         <div className="col-sm-12 col-md-4 p-info"></div>
+      <div id="parallax" data-scrollbar>
+
         <div className="col-sm-12 col-md-8 p-slide" >
           <div className="color-bg col-sm-12 col-md-7" >
               <p className="about-header">I build things.</p>
@@ -71,8 +81,11 @@ export default class Parallax extends Component {
               </div>
             </div>
           </div>
+
         </div>
-      <div className="col--sm-12 col-md-12 black">Black</div>
+        <div className="third-para secondary col-sm-12 col-md-12">
+
+        </div>
       </div>
 
     </div>
