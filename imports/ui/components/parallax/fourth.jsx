@@ -32,7 +32,8 @@ export default class Fourth extends Component {
   render() {
     return (
       <div className="fourth-para  col-sm-12 col-md-12">
-
+        <p className="th-headA">I believe in thinking outside the box,</p>
+        <p className="th-headB">while pushing the limit of what I can do.</p>
       </div>
 
     );
