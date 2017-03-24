@@ -95,11 +95,52 @@
                 }
             }
         }
+
         .third-para {
+            padding: 0;
+            position: absolute;
+            height: 100vh;
+
+            .black-vertical {
+                padding: 0;
+                background: #171719;
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+
+                .alphas {
+                    padding: calc(1em + 4px) 3em calc(1em + 8px) 2em;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    label {
+                        font-size: calc(2.5em + 4px);
+                        font-weight: 100;
+                        color: white;
+                        letter-spacing: 6px;
+                    }
+                }
+
+                .alphas:first-child {
+                    padding-top: 10em;
+                }
+            }
+
+            .white-block {
+                height: 100vh;
+                background-image: url("/images/ivanA.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        }
+        .fourth-para {
+          padding: 0;
           position: absolute;
-          background: purple;
           height: 100vh;
-          
+          background: #171719;
         }
     }
 
