@@ -31,16 +31,6 @@ export default class Parallax extends Component {
       'overscrollEffect':'bounce',
       'damping':'.05'
     });
-    let height = $('.p-slide').height();
-    $('.third-para').css({
-      'top': height
-    })
-    $(window).resize(function() {
-      height = $('.p-slide').height();
-      $('.third-para').css({
-        'top': height
-      })
-    })
   }
 
 

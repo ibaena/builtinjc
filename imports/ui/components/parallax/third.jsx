@@ -16,6 +16,16 @@ export default class Third extends Component {
     os.on('enter', '.test', (element) => {
 
     });
+    let height = $('.p-slide').height();
+    $('.third-para').css({
+      'top': height
+    })
+    $(window).resize(function() {
+      height = $('.p-slide').height();
+      $('.third-para').css({
+        'top': height
+      })
+    });
   }
 
 

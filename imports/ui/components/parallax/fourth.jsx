@@ -19,12 +19,12 @@ export default class Fourth extends Component {
     let heightB = $('.p-slide').height() + $('.third-para').height();
     $('.fourth-para').css({
       'top': heightB
-    })
+    });
     $(window).resize(function() {
-      height = $('.p-slide').height();
+      heightB = $('.p-slide').height() + $('.third-para').height();
       $('.fourth-para').css({
-        'top': heightB
-      })
+        'top': heightB,
+      });
     })
   }
 
