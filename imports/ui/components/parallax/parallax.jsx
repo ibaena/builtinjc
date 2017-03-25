@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import Scrollbar from 'smooth-scrollbar';
 
-import OnScreen from 'onscreen';
-const os = new OnScreen();
+
 
 import Intro from './intro.jsx';
 import Second from './second.jsx';
@@ -17,9 +16,7 @@ export default class Parallax extends Component {
 
   }
   componentDidMount(){
-    os.on('enter', '.test', (element) => {
 
-    });
     setTimeout(function(){
       $('#parallax-wrapper').css({
         'opacity':'1',
@@ -31,6 +28,7 @@ export default class Parallax extends Component {
       'overscrollEffect':'bounce',
       'damping':'.05'
     });
+
   }
 
 

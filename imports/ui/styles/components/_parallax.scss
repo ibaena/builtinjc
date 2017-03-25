@@ -28,6 +28,7 @@
                     font-size: calc(3em + 8px);
                     font-weight: 500;
                     padding-bottom: calc(2em + 6px);
+
                 }
 
                 .about-header-sm {
@@ -136,27 +137,7 @@
                 background-size: cover;
             }
         }
-        .fourth-para {
-          padding: 0;
-          position: absolute;
-          height: 100vh;
-          background: #171719;
 
-          .th-headA {
-            padding-top: calc(4em + 8px);
-            font-size: calc(2.7em + 5px);
-            margin-bottom: 0;
-            text-align: center;
-            font-weight: 300;
-            color:white;
-          }
-          .th-headB {
-            font-size: calc(2.4em + 10px);
-            text-align: center;
-            font-weight: 400;
-            color:white;
-          }
-        }
     }
 
     .p-info {
@@ -208,4 +189,9 @@ scrollbar .scrollbar-track-y {
     bottom: 0;
     position: fixed;
     background: black;
+}
+
+.faded {
+  opacity: 0;
+  transition: all .4s ease-in-out;
 }

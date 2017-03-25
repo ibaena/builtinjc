@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
-
 import OnScreen from 'onscreen';
 const os = new OnScreen();
-
 
 
 // Intro component
@@ -13,9 +11,12 @@ export default class Second extends Component {
 
   }
   componentDidMount(){
-    os.on('enter', '.test', (element) => {
-
-    });
+    os.on('enter', '.secondary', (element) => {
+      $('.faded').css({
+        'transition':'all .4s ease-in',
+        'opacity':'1',
+      });
+  });
   }
 
 
@@ -23,7 +24,7 @@ export default class Second extends Component {
     return (
           <div className="secondary col-sm-12 col-md-12">
             <div className="col-sm-12 col-md-6 add-p-top" >
-                <p className="about-header">What I can do.</p>
+                <p className="about-header faded">What I can do.</p>
             </div>
             <div className="col-sm-12 col-md-6 add-p-top-b" >
               <div className="alphas">

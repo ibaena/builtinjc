@@ -1,8 +1,5 @@
 import React, { Component } from 'react';
 
-import OnScreen from 'onscreen';
-const os = new OnScreen();
-
 
 // Intro component
 export default class Intro extends Component {
@@ -12,9 +9,7 @@ export default class Intro extends Component {
 
   }
   componentDidMount(){
-    os.on('enter', '.test', (element) => {
 
-    });
   }
 
 

@@ -1,0 +1,49 @@
+.fourth-para {
+    padding: 0;
+    position: absolute;
+    min-height: 100vh;
+    height: 100%;
+    background: #171719;
+
+    .th-headA {
+        padding-top: calc(4em + 8px);
+        font-size: calc(2.7em + 5px);
+        margin-bottom: 0;
+        text-align: center;
+        font-weight: 300;
+        color: white;
+        position: relative;
+        top:20px;
+        opacity: 0;
+        transition: all .4s ease-in-out;
+    }
+
+    .th-headB {
+        font-size: calc(2.4em + 10px);
+        text-align: center;
+        font-weight: 400;
+        color: white;
+    }
+
+    .logo-container {
+        padding-top: calc(2em + 4px);
+        background: #171719;
+
+        .brand-logos {
+            .logo-wrapper {
+                padding: calc(5em + 6px) 0;
+
+                .brand-img {
+                    padding: calc(.8em + 4px);
+                    max-width: 200px;
+                    position: relative;
+                    top: 20px;
+                    opacity: 1;
+                    transition: all .4s ease-in-out;
+                }
+            }
+        }
+    }
+}
+
+/**** Animation ****/

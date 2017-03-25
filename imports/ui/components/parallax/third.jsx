@@ -1,10 +1,5 @@
 import React, { Component } from 'react';
 
-import OnScreen from 'onscreen';
-const os = new OnScreen();
-
-
-
 // Intro component
 export default class Third extends Component {
   // Note: In ES6, constructor() === componentWillMount() in React ES5
@@ -13,9 +8,7 @@ export default class Third extends Component {
 
   }
   componentDidMount(){
-    os.on('enter', '.test', (element) => {
 
-    });
     let height = $('.p-slide').height();
     $('.third-para').css({
       'top': height
