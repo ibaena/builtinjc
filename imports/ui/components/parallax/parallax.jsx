@@ -31,12 +31,17 @@ export default class Parallax extends Component {
 
     scrollbar.addListener(function() {
       let scrollPos = true;
+      let aboutA = scrollbar.isVisible(document.querySelector('#first'));
       let aboutB = scrollbar.isVisible(document.querySelector('.secondary'));
       let aboutC = scrollbar.isVisible(document.querySelector('#three'));
       let aboutD = scrollbar.isVisible(document.querySelector('#four'));
-      let aboutHead = scrollbar.isVisible(document.querySelector('.th-headA'));
 
       switch(scrollPos) {
+        case aboutA:
+          console.log('About One',aboutA);
+
+        break;
+
 
         case aboutB:
           console.log('About Two',aboutB);
@@ -84,8 +89,6 @@ export default class Parallax extends Component {
       <div className="container-fluid" id="parallax-wrapper" >
       <div className="col-sm-12 col-md-4 p-info"></div>
         <div id="parallax" >
-
-
           <div className="col-sm-12 col-md-8  p-slide" >
             <Intro />
             <Second />
