@@ -38,14 +38,15 @@ export default class Fourth extends Component {
 
     /* let heightB = $('.p-slide').height() + $('.third-para').height();
     $('.fourth-para').css({
-      'top': heightB
+      'top': heightB - 1
     });
     $(window).resize(function() {
       heightB = $('.p-slide').height() + $('.third-para').height();
       $('.fourth-para').css({
-        'top': heightB,
+        'top': heightB -1 ,
       });
-    }) */
+    }); */
+
     os.on('enter', '.th-headA', (element) => {
       $('.th-headA').css({
         'opacity':'1',

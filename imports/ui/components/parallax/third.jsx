@@ -9,14 +9,14 @@ export default class Third extends Component {
   }
   componentDidMount(){
 
-    /* let height = $('.p-slide').height();
+     /* let height = $('.p-slide').height();
     $('.third-para').css({
-      'top': height
+      'top': height -1
     })
     $(window).resize(function() {
       height = $('.p-slide').height();
       $('.third-para').css({
-        'top': height
+        'top': height - 1
       })
     }); */
   }
@@ -24,7 +24,7 @@ export default class Third extends Component {
 
   render() {
     return (
-      <div className="third-para secondary col-sm-12 col-md-12">
+      <div className="third-para secondary col-sm-12 col-md-12" id="three">
         <div className="col-sm-12 col-md-4 black-vertical">
           <div className="alphas">
             <label>BUILDER</label>
