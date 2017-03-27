@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import Scrollbar from 'smooth-scrollbar';
 
-
+import OnScreen from 'onscreen';
+const os = new OnScreen();
 
 import Intro from './intro.jsx';
 import Second from './second.jsx';
@@ -16,6 +17,7 @@ export default class Parallax extends Component {
 
   }
   componentDidMount(){
+
     setTimeout(function(){
       $('#parallax-wrapper').css({
         'opacity':'1',
@@ -28,24 +30,23 @@ export default class Parallax extends Component {
       'damping':'.05'
     });
 
-
-
   }
 
 
   render() {
     return (
-      <div className="container-fluid" id="parallax-wrapper" >
-  <div className="col-sm-12 col-md-4 p-info"></div>
-      <div id="parallax" >
+      <div className="container-fluid" id="parallax-wrapper">
+        <div className="col-sm-12 col-md-4 p-info"></div>
+      <div id="parallax" data-scrollbar>
 
-        <div className="col-sm-12 col-md-8  p-slide" >
+        <div className="col-sm-12 col-md-8 p-slide" >
           <Intro />
           <Second />
         </div>
           <Third />
           <Fourth />
       </div>
+
     </div>
     );
   }

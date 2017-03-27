@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-
+import OnScreen from 'onscreen';
+const os = new OnScreen();
 
 // Intro component
 export default class Fourth extends Component {
@@ -35,7 +36,7 @@ export default class Fourth extends Component {
   }
   componentDidMount(){
 
-    let heightB = $('.p-slide').height() + $('.third-para').height();
+    /* let heightB = $('.p-slide').height() + $('.third-para').height();
     $('.fourth-para').css({
       'top': heightB
     });
@@ -44,7 +45,23 @@ export default class Fourth extends Component {
       $('.fourth-para').css({
         'top': heightB,
       });
-    })
+    }) */
+    os.on('enter', '.th-headA', (element) => {
+      $('.th-headA').css({
+        'opacity':'1',
+        'color':'red',
+        'transition':'all .3s ease-in-out'
+      })
+    });
+    os.on('leave', '.th-headA', (element) => {
+      $('.th-headA').css({
+        'opacity':'0',
+        'color':'white',
+        'transition':'all .3s ease-in-out'
+      })
+    });
+
+
   }
 
 

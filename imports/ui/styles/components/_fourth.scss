@@ -1,6 +1,7 @@
 .fourth-para {
     padding: 0;
-    position: absolute;
+    //position: absolute;
+    //float: left;
     min-height: 100vh;
     height: 100%;
     background: #171719;
@@ -47,3 +48,6 @@
 }
 
 /**** Animation ****/
+#about::-webkit-scrollbar { 
+    display: none;
+}

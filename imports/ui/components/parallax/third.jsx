@@ -9,7 +9,7 @@ export default class Third extends Component {
   }
   componentDidMount(){
 
-    let height = $('.p-slide').height();
+    /* let height = $('.p-slide').height();
     $('.third-para').css({
       'top': height
     })
@@ -18,7 +18,7 @@ export default class Third extends Component {
       $('.third-para').css({
         'top': height
       })
-    });
+    }); */
   }
 
 

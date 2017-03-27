@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import OnScreen from 'onscreen';
-const os = new OnScreen();
+
 
 
 // Intro component
@@ -11,12 +10,8 @@ export default class Second extends Component {
 
   }
   componentDidMount(){
-    os.on('enter', '.secondary', (element) => {
-      $('.faded').css({
-        'transition':'all .4s ease-in',
-        'opacity':'1',
-      });
-  });
+
+
   }
 
 
