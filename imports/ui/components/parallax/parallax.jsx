@@ -6,8 +6,7 @@ import Second from './second.jsx';
 import Third from './third.jsx';
 import Fourth from './fourth.jsx';
 
-import OnScreen from 'onscreen';
-const os = new OnScreen();
+import {TweenMax, Power2, TimelineLite} from "gsap";
 
 // Intro component
 export default class Parallax extends Component {
@@ -23,6 +22,7 @@ export default class Parallax extends Component {
         'transition':'all .4s ease-in-out'
       })
     },100);
+
       var scrollbar = Scrollbar.init(document.getElementById('parallax'), {
       'speed':'1.5',
       'overscrollEffect':'bounce',
@@ -68,6 +68,7 @@ export default class Parallax extends Component {
             'top':'0px',
             'transition':'all .4s ease-in-out'
           })
+          TweenMax.staggerTo(".brand-img", 1, {opacity:1, transition:'all .3s ease-in'}, 0.2);
         break;
       }
 

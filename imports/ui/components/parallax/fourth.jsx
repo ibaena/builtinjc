@@ -46,22 +46,6 @@ export default class Fourth extends Component {
       });
     }); */
 
-    /* os.on('enter', '.th-headA', (element) => {
-      $('.th-headA').css({
-        'opacity':'1',
-        'color':'red',
-        'transition':'all .3s ease-in-out'
-      })
-    });
-    os.on('leave', '.th-headA', (element) => {
-      $('.th-headA').css({
-        'opacity':'0',
-        'color':'white',
-        'transition':'all .3s ease-in-out'
-      })
-    }); */
-
-
   }
 
 
