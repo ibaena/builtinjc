@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import OnScreen from 'onscreen';
-const os = new OnScreen();
+
 
 // Intro component
 export default class Fourth extends Component {
@@ -47,7 +46,7 @@ export default class Fourth extends Component {
       });
     }); */
 
-    os.on('enter', '.th-headA', (element) => {
+    /* os.on('enter', '.th-headA', (element) => {
       $('.th-headA').css({
         'opacity':'1',
         'color':'red',
@@ -60,7 +59,7 @@ export default class Fourth extends Component {
         'color':'white',
         'transition':'all .3s ease-in-out'
       })
-    });
+    }); */
 
 
   }

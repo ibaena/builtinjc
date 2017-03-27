@@ -6,6 +6,9 @@ import Second from './second.jsx';
 import Third from './third.jsx';
 import Fourth from './fourth.jsx';
 
+import OnScreen from 'onscreen';
+const os = new OnScreen();
+
 // Intro component
 export default class Parallax extends Component {
   // Note: In ES6, constructor() === componentWillMount() in React ES5
@@ -31,11 +34,22 @@ export default class Parallax extends Component {
       let aboutB = scrollbar.isVisible(document.querySelector('.secondary'));
       let aboutC = scrollbar.isVisible(document.querySelector('#three'));
       let aboutD = scrollbar.isVisible(document.querySelector('#four'));
+      let aboutHead = scrollbar.isVisible(document.querySelector('.th-headA'));
 
       switch(scrollPos) {
 
         case aboutB:
           console.log('About Two',aboutB);
+          $('.alphas').css({
+            'opacity':'1',
+            'top':'0px',
+            'transition':'all .8s ease-in'
+          })
+          $('.about-header').css({
+            'opacity':'1',
+            'top':'0px',
+            'transition':'all .8s ease-in'
+          })
         break;
 
         case aboutC:
@@ -44,6 +58,11 @@ export default class Parallax extends Component {
 
         case aboutD:
           console.log('About Four',aboutD);
+          $('.th-headA').css({
+            'opacity':'1',
+            'color':'red',
+            'transition':'all .3s ease-in'
+          })
         break;
       }
 
