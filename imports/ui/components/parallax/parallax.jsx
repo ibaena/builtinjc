@@ -42,13 +42,13 @@ export default class Parallax extends Component {
           console.log('About Two',aboutB);
           $('.ani-fade').css({
             'opacity':'1',
-            'top':'0px',
-            'transition':'all .8s ease-in'
+            'top':'-50px',
+            'transition':'all .6s ease-in'
           })
           $('.about-header').css({
             'opacity':'1',
             'top':'0px',
-            'transition':'all .8s ease-in'
+            'transition':'all .6s ease-in'
           })
         break;
 
@@ -66,9 +66,9 @@ export default class Parallax extends Component {
           $('.th-headB').css({
             'opacity':'1',
             'top':'0px',
-            'transition':'all .4s ease-in-out'
+            'transition':'all .8s ease-in-out'
           })
-          TweenMax.staggerTo(".brand-img", 1, {opacity:1, transition:'all .3s ease-in'}, 0.2);
+          TweenMax.staggerTo(".brand-img", .2, {opacity:1}, 0.2);
         break;
       }
 
