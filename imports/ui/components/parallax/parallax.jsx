@@ -27,7 +27,25 @@ export default class Parallax extends Component {
     });
 
     scrollbar.addListener(function() {
-console.log(scrollbar.isVisible(document.querySelector('.secondary')));
+      let scrollPos = true;
+      let aboutB = scrollbar.isVisible(document.querySelector('.secondary'));
+      let aboutC = scrollbar.isVisible(document.querySelector('#three'));
+      let aboutD = scrollbar.isVisible(document.querySelector('#four'));
+
+      switch(scrollPos) {
+
+        case aboutB:
+          console.log('About Two',aboutB);
+        break;
+
+        case aboutC:
+          console.log('About Three', aboutC);
+        break;
+
+        case aboutD:
+          console.log('About Four',aboutD);
+        break;
+      }
 
     });
 
