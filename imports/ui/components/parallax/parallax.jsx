@@ -40,7 +40,7 @@ export default class Parallax extends Component {
 
         case aboutB:
           console.log('About Two',aboutB);
-          $('.alphas').css({
+          $('.ani-fade').css({
             'opacity':'1',
             'top':'0px',
             'transition':'all .8s ease-in'
@@ -54,14 +54,19 @@ export default class Parallax extends Component {
 
         case aboutC:
           console.log('About Three', aboutC);
+          $('.ani-right').css({
+            'opacity':'1',
+            'top':'0px',
+            'transition':'all .6s ease-in'
+          })
         break;
 
         case aboutD:
           console.log('About Four',aboutD);
-          $('.th-headA').css({
+          $('.th-headB').css({
             'opacity':'1',
-            'color':'red',
-            'transition':'all .3s ease-in'
+            'top':'0px',
+            'transition':'all .4s ease-in-out'
           })
         break;
       }

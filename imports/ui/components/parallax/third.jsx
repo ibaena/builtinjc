@@ -26,19 +26,19 @@ export default class Third extends Component {
     return (
       <div className="third-para secondary col-sm-12 col-md-12" id="three">
         <div className="col-sm-12 col-md-4 black-vertical">
-          <div className="alphas">
+          <div className="alphas ani-right">
             <label>BUILDER</label>
           </div>
-          <div className="alphas push-right">
+          <div className="alphas ani-right">
             <label>NERD</label>
           </div>
-          <div className="alphas push-right">
+          <div className="alphas ani-right">
             <label>KNICKS FAN</label>
           </div>
-          <div className="alphas push-right">
+          <div className="alphas  ani-right">
             <label>XBOX GAMER</label>
           </div>
-          <div className="alphas push-right">
+          <div className="alphas ani-right">
             <label>HORROR MOVIE BUFF</label>
           </div>
         </div>
