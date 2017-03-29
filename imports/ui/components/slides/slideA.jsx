@@ -106,7 +106,7 @@ export default class SlideA extends Component {
             $(this).css({
               'z-index':'10',
               'transition':'all .2s ease-in',
-              'width':'34%'
+              'width':'33.4%'
             })
           }
         })
