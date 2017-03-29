@@ -10,17 +10,17 @@ export default class SlideA extends Component {
   }
   buildThirds() {
     return [
-      {_id:1, name:'one'},
-      {_id:2, name:'two'},
-      {_id:3, name:'three'},
+      {_id:1, name:'Tampas Downtown', src:'/tampasdowntown', expand:'left-ex'},
+      {_id:2, name:'Wine4Food', src:'/wine4food', expand:'middle-ex'},
+      {_id:3, name:'Mccaffreys', src:'/mccaffreys', expand:'right-ex'},
     ]
   }
   renderCol() {
     return this.buildThirds().map((item) => (
-      <div className="col-md-4 col-sm-12 img-wrapper" key={item._id}>
+      <div className={"col-md-4 col-sm-12 img-wrapper "+ item.expand  }key={item._id}>
         <div className="viewports">
           <div className="col-md-12 media-box">
-            <h1 className="menu-title">Title</h1>
+            <h1 className="menu-title">{item.name}</h1>
             <p className="sub-text">Sub</p>
             <p className="keyword-text">Keyword</p>
           </div>
@@ -45,6 +45,71 @@ export default class SlideA extends Component {
                 $(this).carousel('next');
             }
         });
+        let triggerLeft = false;
+        let triggerRight = false;
+        let triggerMiddle = false;
+
+        $('.left-ex').on('click', function() {
+          triggerLeft = !triggerLeft;
+          if(triggerLeft === true){
+            $(this).css({
+              'width':'100%',
+              'transition':'all .2s ease-in',
+              'z-index':'9999',
+              'position':'absolute',
+              'top':'0',
+              'left':'0'
+            });
+          }else {
+            $(this).css({
+              'width':'33.33333%',
+              'transition':'all .2s ease-in',
+              'z-index':'10',
+              'position':'absolute',
+              'top':'0',
+              'left':'0'
+            });
+          }
+
+        })
+        $('.right-ex').on('click', function() {
+          triggerRight = !triggerRight;
+          if(triggerRight === true){
+            $(this).css({
+              'width':'100%',
+              'transition':'all .2s ease-in',
+              'z-index':'9999',
+              'position':'absolute',
+              'top':'0',
+              'right':'0'
+            });
+          }else {
+            $(this).css({
+              'width':'33.333333%',
+              'transition':'all .2s ease-in',
+              'z-index':'10',
+              'position':'absolute',
+              'top':'0',
+              'right':'0'
+            });
+          }
+        })
+        $('.middle-ex').on('click', function() {
+          triggerMiddle = !triggerMiddle;
+          if(triggerMiddle === true){
+            $(this).css({
+              'z-index':'9999',
+              'transition':'all .2s ease-in',
+              'width':'100%'
+            })
+          }else {
+            $(this).css({
+              'z-index':'10',
+              'transition':'all .2s ease-in',
+              'width':'34%'
+            })
+          }
+        })
   }
 
   render() {

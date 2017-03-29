@@ -17,6 +17,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            cursor: pointer;
 
             .media-box {
                 display: block;
@@ -36,7 +37,7 @@
 
                 .menu-title {
                     text-align: center;
-                    font-size: 5em;
+                    font-size: calc(3em + 2px);
                     position: relative;
                     top: 50px;
                     transition: all 0.4s ease-in-out;
@@ -112,4 +113,25 @@
             background-repeat: no-repeat;
         }
     }
+}
+
+@-webkit-keyframes expandline{
+  0%   { width:   0%; }
+  50%  { width:  50%; }
+  100% { width: 100%; }
+}
+
+.middle-ex {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 33.4%;
+}
+.right-ex {
+  position: absolute;
+    margin-left: 66.66666666%;
+}
+.left-ex {
+  position: absolute;
 }
