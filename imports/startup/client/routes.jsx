@@ -8,6 +8,7 @@ import { Home } from '../../ui/pages/Home.jsx'
 import { Cases } from '../../ui/pages/Cases.jsx'
 import { About } from '../../ui/pages/About.jsx'
 import { Contact } from '../../ui/pages/Contact.jsx'
+import { Projects } from '../../ui/pages/Projects.jsx'
 
 
 FlowRouter.route('/', {
@@ -35,6 +36,13 @@ FlowRouter.route('/contact', {
     action() {
         mount(App, {
             content: <Contact />
+        });
+    }
+});
+FlowRouter.route('/cases/:site', {
+    action() {
+        mount(App, {
+            content: <Projects />
         });
     }
 });

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import {FlowRouter} from 'meteor/kadira:flow-router';
 
 // Intro component
 export default class SlideA extends Component {
@@ -10,25 +10,34 @@ export default class SlideA extends Component {
   }
   buildThirds() {
     return [
-      {_id:1, name:'Tampas Downtown', src:'/tampasdowntown', expand:'left-ex'},
-      {_id:2, name:'Wine4Food', src:'/wine4food', expand:'middle-ex'},
-      {_id:3, name:'Mccaffreys', src:'/mccaffreys', expand:'right-ex'},
+      {_id:1, name:'Tampas Downtown', src:'/cases/tampasdowntown', expand:'left-ex'},
+      {_id:2, name:'Wine4Food', src:'/cases/wine4food', expand:'middle-ex'},
+      {_id:3, name:'Mccaffreys', src:'/cases/mccaffreys', expand:'right-ex'},
     ]
   }
   renderCol() {
     return this.buildThirds().map((item) => (
       <div className={"col-md-4 col-sm-12 img-wrapper "+ item.expand  }key={item._id}>
-        <div className="viewports">
-          <div className="col-md-12 media-box">
-            <h1 className="menu-title">{item.name}</h1>
-            <p className="sub-text">Sub</p>
-            <p className="keyword-text">Keyword</p>
+          <div className="viewports slide-anchor" id={item.src} >
+            <div className="col-md-12 media-box">
+              <h1 className="menu-title">{item.name}</h1>
+              <p className="sub-text">Sub</p>
+              <p className="keyword-text">Keyword</p>
+            </div>
           </div>
-        </div>
       </div>
     ))
   }
+  clickDelay() {
+    $('.slide-anchor').on('click', function() {
+      let currentSite = this.id;
+      setTimeout(function() {
+        FlowRouter.go(currentSite);
+      },1400);
+    });
+  }
   componentDidMount(){
+    this.clickDelay();
     setTimeout(function(){
       $('#slideA').addClass('fade-in');
     },100);
@@ -54,7 +63,7 @@ export default class SlideA extends Component {
           if(triggerLeft === true){
             $(this).css({
               'width':'100%',
-              'transition':'all .2s ease-in',
+              'transition':'all .4s ease-in-out',
               'z-index':'9999',
               'position':'absolute',
               'top':'0',
@@ -63,7 +72,7 @@ export default class SlideA extends Component {
           }else {
             $(this).css({
               'width':'33.33333%',
-              'transition':'all .2s ease-in',
+              'transition':'all .4s ease-in-out',
               'z-index':'10',
               'position':'absolute',
               'top':'0',
@@ -77,7 +86,7 @@ export default class SlideA extends Component {
           if(triggerRight === true){
             $(this).css({
               'width':'100%',
-              'transition':'all .2s ease-in',
+              'transition':'all .4s ease-in-out',
               'z-index':'9999',
               'position':'absolute',
               'top':'0',
@@ -86,7 +95,7 @@ export default class SlideA extends Component {
           }else {
             $(this).css({
               'width':'33.333333%',
-              'transition':'all .2s ease-in',
+              'transition':'all .4s ease-in-out',
               'z-index':'10',
               'position':'absolute',
               'top':'0',
@@ -99,13 +108,13 @@ export default class SlideA extends Component {
           if(triggerMiddle === true){
             $(this).css({
               'z-index':'9999',
-              'transition':'all .2s ease-in',
+              'transition':'all .4s ease-in-out',
               'width':'100%'
             })
           }else {
             $(this).css({
               'z-index':'10',
-              'transition':'all .2s ease-in',
+              'transition':'all .4s ease-in-out',
               'width':'33.4%'
             })
           }

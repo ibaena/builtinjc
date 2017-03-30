@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import {FlowRouter} from 'meteor/kadira:flow-router';
 
 // Intro component
 export default class FullNav extends Component {
