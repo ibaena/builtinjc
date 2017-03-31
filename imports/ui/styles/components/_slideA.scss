@@ -18,6 +18,7 @@
             justify-content: center;
             align-items: center;
             cursor: pointer;
+            cursor: pointer;
 
             .media-box {
                 display: block;
@@ -60,8 +61,8 @@
     }
 
     .viewports:hover {
-        filter: grayscale(80%);
-        transform: scale(1.1);
+        filter: grayscale(85%);
+        //transform: scale(1.1);
         transition: all 0.2s ease-in;
 
         .media-box {
@@ -92,7 +93,7 @@
 
     .img-wrapper:first-child {
         .viewports {
-            background-image: url('/images/golf.png');
+            background-image: url('/images/fw-sites/tampa.png');
             background-size: 100vw 100%;
             background-repeat: no-repeat;
         }
@@ -100,7 +101,7 @@
 
     .img-wrapper:nth-child(2) {
         .viewports {
-            background-image: url('/images/basketball.png');
+            background-image: url('/images/fw-sites/wine.png');
             background-size: 100vw 100%;
             background-repeat: no-repeat;
         }
@@ -108,7 +109,7 @@
 
     .img-wrapper:nth-child(3) {
         .viewports {
-            background-image: url('/images/shoe.png');
+            background-image: url('/images/fw-sites/mccaffreys.png');
             background-size: 100vw 100%;
             background-repeat: no-repeat;
         }

@@ -28,20 +28,20 @@ export default class Single extends Component {
       if(pathname === '/cases/tampasdowntown'){
         $('#site-1').css({
           'z-index':'10',
-          'transition':'all .2s linear',
+          'transition':'all .2s ease-in-out',
           'opacity':'1'
         })
 
       }else if( pathname === '/cases/wine4food') {
         $('#site-2').css({
           'z-index':'10',
-          'transition':'all .2s linear',
+          'transition':'all .2s ease-in-out',
           'opacity':'1'
         })
       }else if(pathname === '/cases/mccaffreys') {
         $('#site-3').css({
           'z-index':'10',
-          'transition':'all .2s linear',
+          'transition':'all .2s ease-in-out',
           'opacity':'1'
         })
       }

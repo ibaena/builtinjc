@@ -29,12 +29,12 @@ export default class SlideA extends Component {
     ))
   }
   clickDelay() {
-    $('.slide-anchor').on('click', function() {
+    /* $('.slide-anchor').on('click', function() {
       let currentSite = this.id;
       setTimeout(function() {
         FlowRouter.go(currentSite);
       },1400);
-    });
+    }); */
   }
   componentDidMount(){
     this.clickDelay();

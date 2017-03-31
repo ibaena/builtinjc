@@ -15,6 +15,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            cursor: pointer;
 
             .media-box {
                 display: block;
@@ -34,7 +35,7 @@
 
                 .menu-title {
                     text-align: center;
-                    font-size: 5em;
+                    font-size: calc(3em + 2px);
                     position: relative;
                     top: 50px;
                     transition: all 0.4s ease-in-out;
@@ -57,8 +58,8 @@
     }
 
     .viewports:hover {
-        filter: grayscale(80%);
-        transform: scale(1.1);
+        filter: grayscale(85%);
+        //transform: scale(1.1);
         transition: all 0.2s ease-in;
 
         .media-box {
@@ -89,7 +90,7 @@
 
     .img-wrapper:first-child {
         .viewports {
-            background-image: url('/images/golf.png');
+            background-image: url('/images/fw-sites/feverall.png');
             background-size: 100vw 100%;
             background-repeat: no-repeat;
         }
@@ -97,7 +98,7 @@
 
     .img-wrapper:nth-child(2) {
         .viewports {
-            background-image: url('/images/basketball.png');
+            background-image: url('/images/fw-sites/amloid.png');
             background-size: 100vw 100%;
             background-repeat: no-repeat;
         }
@@ -105,7 +106,7 @@
 
     .img-wrapper:nth-child(3) {
         .viewports {
-            background-image: url('/images/shoe.png');
+            background-image: url('/images/fw-sites/tuckers.png');
             background-size: 100vw 100%;
             background-repeat: no-repeat;
         }
