@@ -10,7 +10,7 @@ export default class SlideB extends Component {
   }
   buildThirdsB() {
     return [
-      {_id:4, name:'Finlandia', src:'/cases/finlandia', expand:'left-ex'},
+      {_id:4, name:'Feverall', src:'/cases/feverall', expand:'left-ex'},
       {_id:5, name:'Amloid Toys', src:'/cases/amloid', expand:'middle-ex'},
       {_id:6, name:'Tuckers Point', src:'/cases/tuckerspoint', expand:'right-ex'},
     ]
