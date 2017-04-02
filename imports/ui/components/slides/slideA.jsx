@@ -19,7 +19,7 @@ export default class SlideA extends Component {
     return this.buildThirds().map((item) => (
       <div className={"col-md-4 col-sm-12 img-wrapper "+ item.expand  }key={item._id}>
         <svg className="slide__overlay view-overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
-           <path className="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
+           <path className="slide__overlay-path" d="M0,0 175,0 575,405 0,405" />
          </svg>
 
           <div className="viewports slide-anchor" id={item.src} >

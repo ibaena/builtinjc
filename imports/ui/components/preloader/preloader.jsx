@@ -18,7 +18,7 @@ export default class Preloader extends Component {
     },600)
     setTimeout(function(){
       TweenMax.to(".preload-box", .6, {width:'0%', ease:Cubic.easeInOut});
-      TweenMax.to(".preload-letter", .4, {left:'25%', ease:Cubic.easeInOut, opacity:0});
+      TweenMax.to(".preload-letter", .4, {left:'40%', ease:Cubic.easeInOut, opacity:0});
     },4500)
     setTimeout(function(){
       FlowRouter.go('/cases');
