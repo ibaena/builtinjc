@@ -10,9 +10,9 @@ export default class SlideA extends Component {
   }
   buildThirds() {
     return [
-      {_id:1, name:'Tampas Downtown', src:'/cases/tampasdowntown', expand:'left-ex'},
-      {_id:2, name:'Wine4Food', src:'/cases/wine4food', expand:'middle-ex'},
-      {_id:3, name:'Mccaffreys', src:'/cases/mccaffreys', expand:'right-ex'},
+      {_id:1, name:'Tampas Downtown', src:'https://www.tampasdowntown.com/', expand:'left-ex', sub:'Downtown Tampa Is Happening!', location:'Tampa, Florida', description:'Fostering a vibrant, diverse, and multi-use Downtown Tampa area.'},
+      {_id:2, name:'Wine4Food', src:'https://wine4food.com/', expand:'middle-ex', sub:'Dedicated to bringing you the best wine and food.', location:'New York City', description:'Wine4Food is the number one destination for everything Wine & Food Related. Wine Tastings & Wine Dinner Party Ideas to Food & Wine Pairings and Recipes.'},
+      {_id:3, name:'Mccaffreys', src:'http://mccaffreys.com/', expand:'right-ex', sub:'Mccaffreys Food Markets and Simply Fresh.', location:'New Jersey & Pennsylvania', description:'The highest quality fresh food, exceptional customer service, and commitment to community - McCaffrey\'s Food Markets.'},
     ]
   }
   renderCol() {
@@ -21,11 +21,19 @@ export default class SlideA extends Component {
         <svg className="slide__overlay view-overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
            <path className="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
          </svg>
+
           <div className="viewports slide-anchor" id={item.src} >
             <div className="col-md-12 media-box">
               <h1 className="menu-title">{item.name}</h1>
-              <p className="sub-text">Sub</p>
-              <p className="keyword-text">Keyword</p>
+              <p className="sub-text">{item.sub}</p>
+              <p className="keyword-text">{item.location}</p>
+            </div>
+            <div className="svg-box col-md-4">
+              <h1>{item.name}</h1>
+              <div className="site-description">
+                {item.description}
+              </div>
+              <a href={item.src} className="site-link">Launch</a>
             </div>
           </div>
       </div>

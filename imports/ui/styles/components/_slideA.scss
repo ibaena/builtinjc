@@ -157,9 +157,17 @@
     height: 100%;
     opacity: 0;
     right: 500px;
-    transition:all .5s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
 .slide__overlay-path {
     fill: rgba(233, 156, 126, .7);
+}
+
+.svg-box {
+    position: absolute;
+    z-index: 99;
+    top: 35%;
+    left: 18%;
+    transform: translate(-50%, -50%);
 }
