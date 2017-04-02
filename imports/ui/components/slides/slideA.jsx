@@ -18,6 +18,9 @@ export default class SlideA extends Component {
   renderCol() {
     return this.buildThirds().map((item) => (
       <div className={"col-md-4 col-sm-12 img-wrapper "+ item.expand  }key={item._id}>
+        <svg className="slide__overlay view-overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
+           <path className="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
+         </svg>
           <div className="viewports slide-anchor" id={item.src} >
             <div className="col-md-12 media-box">
               <h1 className="menu-title">{item.name}</h1>
@@ -58,8 +61,12 @@ export default class SlideA extends Component {
         let triggerRight = false;
         let triggerMiddle = false;
 
+
+
         $('.left-ex').on('click', function() {
+          let slideSVG = $(this).find('.view-overlay');
           triggerLeft = !triggerLeft;
+
           if(triggerLeft === true){
             $(this).css({
               'width':'100%',
@@ -69,6 +76,13 @@ export default class SlideA extends Component {
               'top':'0',
               'left':'0'
             });
+            setTimeout(function() {
+              slideSVG.css({
+                'transition':'all .5s ease-in-out',
+                'opacity':'1',
+                'right':'0px'
+              });
+            },200);
           }else {
             $(this).css({
               'width':'33.33333%',
@@ -78,11 +92,18 @@ export default class SlideA extends Component {
               'top':'0',
               'left':'0'
             });
+            slideSVG.css({
+              'transition':'all .3s ease-in-out',
+              'opacity':'0',
+              'right':'500px'
+            });
           }
 
         })
         $('.right-ex').on('click', function() {
+          let slideSVG = $(this).find('.view-overlay');
           triggerRight = !triggerRight;
+
           if(triggerRight === true){
             $(this).css({
               'width':'100%',
@@ -92,6 +113,13 @@ export default class SlideA extends Component {
               'top':'0',
               'right':'0'
             });
+            setTimeout(function() {
+              slideSVG.css({
+                'transition':'all .5s ease-in-out',
+                'opacity':'1',
+                'right':'0px'
+              });
+            },200);
           }else {
             $(this).css({
               'width':'33.333333%',
@@ -101,22 +129,41 @@ export default class SlideA extends Component {
               'top':'0',
               'right':'0'
             });
+            slideSVG.css({
+              'transition':'all .3s ease-in-out',
+              'opacity':'0',
+              'right':'500px'
+            });
           }
         })
         $('.middle-ex').on('click', function() {
+          let slideSVG = $(this).find('.view-overlay');
           triggerMiddle = !triggerMiddle;
+
           if(triggerMiddle === true){
             $(this).css({
               'z-index':'9999',
               'transition':'all .4s ease-in-out',
               'width':'100%'
-            })
+            });
+            setTimeout(function() {
+              slideSVG.css({
+                'transition':'all .5s ease-in-out',
+                'opacity':'1',
+                'right':'0px'
+              })
+            },200);
           }else {
             $(this).css({
               'z-index':'10',
               'transition':'all .4s ease-in-out',
               'width':'33.4%'
-            })
+            });
+            slideSVG.css({
+              'transition':'all .3s ease-in-out',
+              'opacity':'0',
+              'right':'500px'
+            });
           }
         })
   }

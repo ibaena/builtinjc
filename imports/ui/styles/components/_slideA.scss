@@ -115,24 +115,51 @@
         }
     }
 }
+@-webkit-keyframes expandline {
+    0% {
+        width: 0;
+    }
 
-@-webkit-keyframes expandline{
-  0%   { width:   0%; }
-  50%  { width:  50%; }
-  100% { width: 100%; }
+    50% {
+        width: 50%;
+    }
+
+    100% {
+        width: 100%;
+    }
 }
 
 .middle-ex {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 33.4%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 33.4%;
 }
+
 .right-ex {
-  position: absolute;
+    position: absolute;
     margin-left: 66.66666666%;
 }
+
 .left-ex {
-  position: absolute;
+    position: absolute;
+}
+
+.view-overlay {
+    position: absolute;
+    height: 100%;
+    z-index: 20;
+    overflow: hidden;
+    position: absolute;
+    z-index: 99;
+    bottom: 0;
+    height: 100%;
+    opacity: 0;
+    right: 500px;
+    transition:all .5s ease-in-out;
+}
+
+.slide__overlay-path {
+    fill: rgba(233, 156, 126, .7);
 }
