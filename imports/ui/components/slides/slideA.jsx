@@ -49,6 +49,7 @@ export default class SlideA extends Component {
     }); */
   }
   componentDidMount(){
+
     this.clickDelay();
     setTimeout(function(){
       $('#slideA').addClass('fade-in');
@@ -74,6 +75,8 @@ export default class SlideA extends Component {
 
         $('.left-ex').on('click', function() {
           let slideSVG = $(this).find('.view-overlay');
+          let slideText = $(this).find('.svg-box');
+          let slideMedia = $(this).find('.media-box');
           triggerLeft = !triggerLeft;
 
           if(triggerLeft === true){
@@ -85,6 +88,11 @@ export default class SlideA extends Component {
               'top':'0',
               'left':'0'
             });
+            slideMedia.css({
+              'transition':'all .3s ease-in-out',
+              'opacity':'0',
+              'left':'200px'
+            });
             setTimeout(function() {
               slideSVG.css({
                 'transition':'all .5s ease-in-out',
@@ -92,6 +100,14 @@ export default class SlideA extends Component {
                 'right':'0px'
               });
             },200);
+            setTimeout(function() {
+              slideText.css({
+                'transition':'all .3s ease-in-out',
+                'opacity':'1',
+                'top':'30%',
+                'display':'block'
+              });
+            },600)
           }else {
             $(this).css({
               'width':'33.33333%',
@@ -101,16 +117,28 @@ export default class SlideA extends Component {
               'top':'0',
               'left':'0'
             });
-            slideSVG.css({
-              'transition':'all .3s ease-in-out',
+              slideSVG.css({
+                'transition':'all .3s ease-in-out',
+                'opacity':'0',
+                'right':'500px'
+              });
+            slideText.css({
+              'transition':'all .1s ease-in-out',
               'opacity':'0',
-              'right':'500px'
+              'top':'20%',
+            });
+            slideMedia.css({
+              'transition':'all .8s ease-in-out',
+              'opacity':'1',
+              'left':'0'
             });
           }
 
         })
         $('.right-ex').on('click', function() {
           let slideSVG = $(this).find('.view-overlay');
+          let slideText = $(this).find('.svg-box');
+          let slideMedia = $(this).find('.media-box');
           triggerRight = !triggerRight;
 
           if(triggerRight === true){
@@ -122,6 +150,11 @@ export default class SlideA extends Component {
               'top':'0',
               'right':'0'
             });
+            slideMedia.css({
+              'transition':'all .3s ease-in-out',
+              'opacity':'0',
+              'left':'200px'
+            });
             setTimeout(function() {
               slideSVG.css({
                 'transition':'all .5s ease-in-out',
@@ -129,6 +162,14 @@ export default class SlideA extends Component {
                 'right':'0px'
               });
             },200);
+            setTimeout(function() {
+              slideText.css({
+                'transition':'all .3s ease-in-out',
+                'opacity':'1',
+                'top':'30%',
+                'display':'block'
+              });
+            },600)
           }else {
             $(this).css({
               'width':'33.333333%',
@@ -143,10 +184,22 @@ export default class SlideA extends Component {
               'opacity':'0',
               'right':'500px'
             });
+            slideText.css({
+              'transition':'all .1s ease-in-out',
+              'opacity':'0',
+              'top':'20%',
+            });
+            slideMedia.css({
+              'transition':'all .8s ease-in-out',
+              'opacity':'1',
+              'left':'0'
+            });
           }
         })
         $('.middle-ex').on('click', function() {
           let slideSVG = $(this).find('.view-overlay');
+          let slideText = $(this).find('.svg-box');
+          let slideMedia = $(this).find('.media-box');
           triggerMiddle = !triggerMiddle;
 
           if(triggerMiddle === true){
@@ -155,6 +208,11 @@ export default class SlideA extends Component {
               'transition':'all .4s ease-in-out',
               'width':'100%'
             });
+            slideMedia.css({
+              'transition':'all .3s ease-in-out',
+              'opacity':'0',
+              'left':'200px'
+            });
             setTimeout(function() {
               slideSVG.css({
                 'transition':'all .5s ease-in-out',
@@ -162,6 +220,14 @@ export default class SlideA extends Component {
                 'right':'0px'
               })
             },200);
+            setTimeout(function() {
+              slideText.css({
+                'transition':'all .3s ease-in-out',
+                'opacity':'1',
+                'top':'30%',
+                'display':'block'
+              });
+            },600)
           }else {
             $(this).css({
               'z-index':'10',
@@ -172,6 +238,16 @@ export default class SlideA extends Component {
               'transition':'all .3s ease-in-out',
               'opacity':'0',
               'right':'500px'
+            });
+            slideText.css({
+              'transition':'all .1s ease-in-out',
+              'opacity':'0',
+              'top':'20%',
+            });
+            slideMedia.css({
+              'transition':'all .8s ease-in-out',
+              'opacity':'1',
+              'left':'0'
             });
           }
         })

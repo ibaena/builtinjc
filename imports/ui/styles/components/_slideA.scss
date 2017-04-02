@@ -166,11 +166,13 @@
 .svg-box {
     position: absolute;
     z-index: 101;
-    top: 30%;
+    top: 20%;
     left: 0;
     color: white;
     width: 40%;
     padding: 6em;
+    opacity: 0;
+    transition: all .3s ease-in-out;
 
     .site-description {
         white-space: normal;
