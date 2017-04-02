@@ -28,17 +28,18 @@ export default class SlideA extends Component {
               <p className="sub-text">{item.sub}</p>
               <p className="keyword-text">{item.location}</p>
             </div>
-            <div className="svg-box col-md-4">
-              <h1>{item.name}</h1>
-              <div className="site-description">
-                {item.description}
-              </div>
-              <a href={item.src} className="site-link">Launch</a>
+          </div>
+          <div className="svg-box" key={item._id}>
+            <div className="site-description col-md-4">
+              <h1 className="site-header">{item.name}</h1>
+              <p className="site-text">{item.description}</p>
+              <p><a href={item.src} className="site-link">Launch</a></p>
             </div>
           </div>
       </div>
     ))
   }
+
   clickDelay() {
     /* $('.slide-anchor').on('click', function() {
       let currentSite = this.id;

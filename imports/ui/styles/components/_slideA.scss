@@ -149,7 +149,6 @@
 .view-overlay {
     position: absolute;
     height: 100%;
-    z-index: 20;
     overflow: hidden;
     position: absolute;
     z-index: 99;
@@ -161,13 +160,42 @@
 }
 
 .slide__overlay-path {
-    fill: rgba(233, 156, 126, .7);
+    fill: rgba(193, 193, 193, 0.5);
 }
 
 .svg-box {
     position: absolute;
-    z-index: 99;
-    top: 35%;
-    left: 18%;
-    transform: translate(-50%, -50%);
+    z-index: 101;
+    top: 30%;
+    left: 0;
+    color: white;
+    width: 40%;
+    padding: 6em;
+
+    .site-description {
+        white-space: normal;
+        width: 100%;
+
+        .site-text {
+          font-size: calc(1.2em + 6px);
+          letter-spacing: .2px;
+          font-weight: 200;
+          margin-top: 2em;
+          margin-bottom: 2em;
+        }
+
+        .site-header {
+            font-size: calc(3em + 8px);
+        }
+    }
+
+    .site-link {
+        width: 200px;
+        padding: calc(.5em + 2px);
+        position: absolute;
+        text-align: center;
+        background: white;
+        text-decoration: none;
+        color: black;
+    }
 }
