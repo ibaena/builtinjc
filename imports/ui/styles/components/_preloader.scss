@@ -2,12 +2,34 @@
     Preloader Styles
 ************************/
 #preloader {
-    min-height: 100vh;
-    width: 100%;
-    background: #18191b;
-    opacity: 1;
-    transform: scale(1);
+  min-height: 100vh;
+  width: 100%;
+  opacity: 1;
+  padding: 0;
+  overflow: hidden;
+  position: fixed;
+  z-index: 9999;
 
+    .preload-box {
+      background: #18191b;
+      height: 100vh;
+      padding: 0;
+      z-index: 9999;
+    }
+    .preload-box:first-child {
+        position: fixed;
+        right: 66.6666%;
+
+    }
+    .preload-box:nth-child(2) {
+        position: fixed;
+        right: 33.3333%;
+    }
+
+    .preload-box:nth-child(3) {
+        position: fixed;
+        right: 0;
+    }
     .preload-text {
         font-size: 10em;
         color: white;
@@ -21,13 +43,13 @@
 .pre-fade {
     transition: all 1.2s ease-in-out !important;
     opacity: 0 !important;
-    transform: scale(0) !important;
+    //transform: scale(0) !important;
 }
 
 .fade-in {
-    transition: all 1.2s ease-in-out !important;
+    transition: all .6s ease-in-out !important;
     opacity: 1 !important;
-    transform: scale(1) !important;
+    //transform: scale(1) !important;
 }
 
 .pre-fade-up {
