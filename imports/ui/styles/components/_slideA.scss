@@ -48,6 +48,14 @@
                     text-align: center;
                     opacity: 0;
                     transition: all 0.4s ease-in-out;
+                    font-size: calc(1em + 3px);
+                    letter-spacing: 2px;
+                    font-weight: 100;
+                    background: rgba(0, 0, 0, 0.7);
+                    margin-left: 1em;
+                    margin-right: 1em;
+                    padding: 2px;
+                    border-radius: 20px;
                 }
 
                 .keyword-text {
@@ -55,6 +63,9 @@
                     transition: all 0.4s ease-in-out;
                     position: relative;
                     top: 10px;
+                    font-size: calc(1.6em + 4px);
+                    font-weight: 200;
+                    letter-spacing: 1px;
                 }
             }
         }
@@ -134,7 +145,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 33.4%;
+    width: 33.39999%;
 }
 
 .right-ex {
@@ -160,7 +171,7 @@
 }
 
 .slide__overlay-path {
-    fill: rgba(193, 193, 193, 0.5);
+    fill: rgba(255, 255, 255, 0.6);
 }
 
 .svg-box {
@@ -168,22 +179,22 @@
     z-index: 101;
     top: 20%;
     left: 0;
-    color: white;
+    color: black;
     width: 40%;
     padding: 6em;
     opacity: 0;
-    transition: all .3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 
     .site-description {
         white-space: normal;
         width: 100%;
 
         .site-text {
-          font-size: calc(1.2em + 6px);
-          letter-spacing: .2px;
-          font-weight: 200;
-          margin-top: 2em;
-          margin-bottom: 2em;
+            font-size: calc(1.3em + 6px);
+            letter-spacing: 0.2px;
+            font-weight: 300;
+            margin-top: 2em;
+            margin-bottom: 2em;
         }
 
         .site-header {
@@ -192,12 +203,23 @@
     }
 
     .site-link {
-        width: 200px;
-        padding: calc(.5em + 2px);
+        width: 180px;
+        padding: calc(.6em + 2px);
         position: absolute;
         text-align: center;
-        background: white;
+        background: black;
         text-decoration: none;
+        color: white;
+        letter-spacing: 3px;
+        font-size: calc(.9em + 2px);
+        transition: all 0.2s linear;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+    }
+
+    .site-link:hover {
+        transition: all 0.2s linear;
+        background: white;
         color: black;
+        box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.4);
     }
 }
