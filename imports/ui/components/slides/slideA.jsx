@@ -132,7 +132,7 @@ export default class SlideA extends Component {
               slideSVG.css({
                 'transition':'all .5s ease-in-out',
                 'opacity':'1',
-                'right':'0px'
+                'left':'0px'
               });
             },200);
             setTimeout(function() {
@@ -155,7 +155,7 @@ export default class SlideA extends Component {
               slideSVG.css({
                 'transition':'all .3s ease-in-out',
                 'opacity':'0',
-                'right':'500px'
+                'left':'-500px'
               });
             slideText.css({
               'transition':'all .1s ease-in-out',
@@ -194,7 +194,7 @@ export default class SlideA extends Component {
               slideSVG.css({
                 'transition':'all .5s ease-in-out',
                 'opacity':'1',
-                'right':'0px'
+                'left':'0'
               });
             },200);
             setTimeout(function() {
@@ -217,7 +217,7 @@ export default class SlideA extends Component {
             slideSVG.css({
               'transition':'all .3s ease-in-out',
               'opacity':'0',
-              'right':'500px'
+              'left':'-500px'
             });
             slideText.css({
               'transition':'all .1s ease-in-out',
@@ -252,7 +252,7 @@ export default class SlideA extends Component {
               slideSVG.css({
                 'transition':'all .5s ease-in-out',
                 'opacity':'1',
-                'right':'0px'
+                'left':'0'
               })
             },200);
             setTimeout(function() {
@@ -272,7 +272,7 @@ export default class SlideA extends Component {
             slideSVG.css({
               'transition':'all .3s ease-in-out',
               'opacity':'0',
-              'right':'500px'
+              'left':'-500px'
             });
             slideText.css({
               'transition':'all .1s ease-in-out',
