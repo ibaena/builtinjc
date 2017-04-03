@@ -163,13 +163,13 @@
     height: 100%;
     overflow: hidden;
     position: absolute;
-    z-index: 99;
+    z-index: 0;
     bottom: 0;
     height: 100%;
     opacity: 0;
     left: -500px;
     transition: all 0.5s ease-in-out;
-    cursor: crosshair;
+    cursor: pointer;
 }
 
 .slide__overlay-path {
@@ -178,11 +178,11 @@
 
 .svg-box {
     position: absolute;
-    z-index: 101;
+    z-index: 0;
     left: 0;
     color: black;
     width: 40%;
-    padding: 6em;
+    padding: 3em;
     opacity: 0;
     transition: all 0.3s ease-in-out;
     top: 30%;

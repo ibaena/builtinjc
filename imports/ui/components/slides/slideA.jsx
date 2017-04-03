@@ -132,7 +132,8 @@ export default class SlideA extends Component {
               slideSVG.css({
                 'transition':'all .5s ease-in-out',
                 'opacity':'1',
-                'left':'0px'
+                'left':'0px',
+                'z-index':'99'
               });
             },200);
             setTimeout(function() {
@@ -140,7 +141,8 @@ export default class SlideA extends Component {
                 'transition':'all .3s ease-in-out',
                 'opacity':'1',
                 'top':'50%',
-                'display':'block'
+                'display':'block',
+                'z-index':'101'
               });
             },600)
           }else {
@@ -155,12 +157,14 @@ export default class SlideA extends Component {
               slideSVG.css({
                 'transition':'all .3s ease-in-out',
                 'opacity':'0',
-                'left':'-500px'
+                'left':'-500px',
+                'z-index':'0'
               });
             slideText.css({
               'transition':'all .1s ease-in-out',
               'opacity':'0',
               'top':'30%',
+              'z-index':'0'
             });
             slideMedia.css({
               'transition':'all .8s ease-in-out',
@@ -194,7 +198,8 @@ export default class SlideA extends Component {
               slideSVG.css({
                 'transition':'all .5s ease-in-out',
                 'opacity':'1',
-                'left':'0'
+                'left':'0',
+                'z-index':'99'
               });
             },200);
             setTimeout(function() {
@@ -202,7 +207,8 @@ export default class SlideA extends Component {
                 'transition':'all .3s ease-in-out',
                 'opacity':'1',
                 'top':'50%',
-                'display':'block'
+                'display':'block',
+                'z-index':'101'
               });
             },600)
           }else {
@@ -217,12 +223,14 @@ export default class SlideA extends Component {
             slideSVG.css({
               'transition':'all .3s ease-in-out',
               'opacity':'0',
-              'left':'-500px'
+              'left':'-500px',
+              'z-index':'0'
             });
             slideText.css({
               'transition':'all .1s ease-in-out',
               'opacity':'0',
               'top':'30%',
+              'z-index':'0'
             });
             slideMedia.css({
               'transition':'all .8s ease-in-out',
@@ -252,7 +260,8 @@ export default class SlideA extends Component {
               slideSVG.css({
                 'transition':'all .5s ease-in-out',
                 'opacity':'1',
-                'left':'0'
+                'left':'0',
+                'z-index':'99'
               })
             },200);
             setTimeout(function() {
@@ -260,7 +269,8 @@ export default class SlideA extends Component {
                 'transition':'all .3s ease-in-out',
                 'opacity':'1',
                 'top':'50%',
-                'display':'block'
+                'display':'block',
+                'z-index':'101'
               });
             },600)
           }else {
@@ -272,12 +282,14 @@ export default class SlideA extends Component {
             slideSVG.css({
               'transition':'all .3s ease-in-out',
               'opacity':'0',
-              'left':'-500px'
+              'left':'-500px',
+              'z-index':'0'
             });
             slideText.css({
               'transition':'all .1s ease-in-out',
               'opacity':'0',
               'top':'30%',
+              'z-index':'0'
             });
             slideMedia.css({
               'transition':'all .8s ease-in-out',
