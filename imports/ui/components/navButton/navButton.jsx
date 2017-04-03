@@ -26,7 +26,7 @@ export default class NavButton extends Component {
   componentDidMount(){
     setInterval(function() {
       $('.left-arrow').css({
-        'transition':'all .1s linear',
+        'transition':'all .2s ease-in-out',
         'left':'-18px',
         'opacity':'0',
         'position':'relative'
@@ -37,19 +37,19 @@ export default class NavButton extends Component {
           'opacity':'0',
           'position':'relative'
         })
-      },1000);
+      },500);
       setTimeout(function() {
         $('.left-arrow').css({
-          'transition':'all .1s linear',
+          'transition':'all .2s ease-in-out',
           'left':'0px',
           'opacity':'1',
           'position':'relative'
         })
-      },2000);
-    },4000)
+      },800);
+    },3000)
     setInterval(function() {
       $('.right-arrow').css({
-        'transition':'all .1s linear',
+        'transition':'all .2s ease-in-out',
         'right':'-18px',
         'opacity':'0',
         'position':'relative'
@@ -60,16 +60,16 @@ export default class NavButton extends Component {
           'opacity':'0',
           'position':'relative'
         })
-      },1000);
+      },500);
       setTimeout(function() {
         $('.right-arrow').css({
-          'transition':'all .1s linear',
+          'transition':'all .2s ease-in-out',
           'right':'0px',
           'opacity':'1',
           'position':'relative'
         })
-      },2000);
-    },4000)
+      },800);
+    },3000)
 
   }
 
