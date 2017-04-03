@@ -163,7 +163,8 @@
     height: 100%;
     overflow: hidden;
     position: absolute;
-    z-index: 100;
+    z-index: 99;
+    visibility:hidden;
     bottom: 0;
     height: 100%;
     opacity: 0;

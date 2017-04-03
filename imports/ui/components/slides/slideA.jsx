@@ -132,7 +132,8 @@ export default class SlideA extends Component {
               slideSVG.css({
                 'transition':'all .5s ease-in-out',
                 'opacity':'1',
-                'left':'0px'
+                'left':'0px',
+                'visibility':'inherit'
               });
             },200);
             setTimeout(function() {
@@ -155,7 +156,8 @@ export default class SlideA extends Component {
               slideSVG.css({
                 'transition':'all .3s ease-in-out',
                 'opacity':'0',
-                'left':'-500px'
+                'left':'-500px',
+                'visibility':'hidden'
               });
             slideText.css({
               'transition':'all .1s ease-in-out',
@@ -194,7 +196,8 @@ export default class SlideA extends Component {
               slideSVG.css({
                 'transition':'all .5s ease-in-out',
                 'opacity':'1',
-                'left':'0'
+                'left':'0',
+                'visibility':'inherit'
               });
             },200);
             setTimeout(function() {
@@ -217,7 +220,8 @@ export default class SlideA extends Component {
             slideSVG.css({
               'transition':'all .3s ease-in-out',
               'opacity':'0',
-              'left':'-500px'
+              'left':'-500px',
+              'visibility':'hidden'
             });
             slideText.css({
               'transition':'all .1s ease-in-out',
@@ -252,7 +256,8 @@ export default class SlideA extends Component {
               slideSVG.css({
                 'transition':'all .5s ease-in-out',
                 'opacity':'1',
-                'left':'0'
+                'left':'0',
+                'visibility':'inherit'
               })
             },200);
             setTimeout(function() {
@@ -272,7 +277,8 @@ export default class SlideA extends Component {
             slideSVG.css({
               'transition':'all .3s ease-in-out',
               'opacity':'0',
-              'left':'-500px'
+              'left':'-500px',
+              'visibility':'hidden'
             });
             slideText.css({
               'transition':'all .1s ease-in-out',
