@@ -59,19 +59,54 @@ export default class SlideA extends Component {
     pause: true,
     interval: false
 });
-      $('#carousel-example-generic').bind('mousewheel DOMMouseScroll', function(e){
-            if(e.originalEvent.wheelDelta > 0 || e.originalEvent.detail < 0){
-                $(this).carousel('prev');
-            }
-            else{
-                $(this).carousel('next');
-            }
+
+      $('#carousel-example-generic').on('mousewheel DOMMouseScroll', function(e){
+        if(triggerArrows){
+          console.log("no scroll");
+
+        }else {
+          if(e.originalEvent.wheelDelta > 0 || e.originalEvent.detail < 0){
+              $(this).carousel('prev');
+          }
+          else{
+              $(this).carousel('next');
+          }
+        }
+
         });
+
         let triggerLeft = false;
         let triggerRight = false;
         let triggerMiddle = false;
+        let triggerArrows = false;
 
+        $('.img-wrapper').on('click', function() {
+          triggerArrows = !triggerArrows
+          if(triggerArrows){
+            $('#left-nav-btn').css({
+              'transition':'all .3s ease-in-out',
+              'left':'-50px',
+              'opacity':'0'
+            });
+            $('#right-nav-btn').css({
+              'transition':'all .3s ease-in-out',
+              'right':'-50px',
+              'opacity':'0'
+            });
 
+          }else {
+            $('#left-nav-btn').css({
+              'transition':'all .3s ease-in-out',
+              'left':'100px',
+              'opacity':'1'
+            });
+            $('#right-nav-btn').css({
+              'transition':'all .3s ease-in-out',
+              'right':'100px',
+              'opacity':'1'
+            });
+          }
+        });
 
         $('.left-ex').on('click', function() {
           let slideSVG = $(this).find('.view-overlay');
@@ -232,7 +267,7 @@ export default class SlideA extends Component {
             $(this).css({
               'z-index':'10',
               'transition':'all .4s ease-in-out',
-              'width':'33.4%'
+              'width':'33.8999%'
             });
             slideSVG.css({
               'transition':'all .3s ease-in-out',

@@ -146,7 +146,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 33.39999%;
+    width: 33.89999%;
 }
 
 .right-ex {
@@ -169,6 +169,7 @@
     opacity: 0;
     right: 500px;
     transition: all 0.5s ease-in-out;
+    cursor: crosshair;
 }
 
 .slide__overlay-path {
