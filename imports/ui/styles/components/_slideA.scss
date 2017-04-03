@@ -179,13 +179,14 @@
 .svg-box {
     position: absolute;
     z-index: 101;
-    top: 20%;
     left: 0;
     color: black;
     width: 40%;
     padding: 6em;
     opacity: 0;
     transition: all 0.3s ease-in-out;
+    top: 30%;
+    transform: translateY(-50%);
 
     .site-description {
         white-space: normal;

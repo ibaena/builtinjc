@@ -139,7 +139,7 @@ export default class SlideA extends Component {
               slideText.css({
                 'transition':'all .3s ease-in-out',
                 'opacity':'1',
-                'top':'30%',
+                'top':'50%',
                 'display':'block'
               });
             },600)
@@ -160,7 +160,7 @@ export default class SlideA extends Component {
             slideText.css({
               'transition':'all .1s ease-in-out',
               'opacity':'0',
-              'top':'20%',
+              'top':'30%',
             });
             slideMedia.css({
               'transition':'all .8s ease-in-out',
@@ -201,7 +201,7 @@ export default class SlideA extends Component {
               slideText.css({
                 'transition':'all .3s ease-in-out',
                 'opacity':'1',
-                'top':'30%',
+                'top':'50%',
                 'display':'block'
               });
             },600)
@@ -222,7 +222,7 @@ export default class SlideA extends Component {
             slideText.css({
               'transition':'all .1s ease-in-out',
               'opacity':'0',
-              'top':'20%',
+              'top':'30%',
             });
             slideMedia.css({
               'transition':'all .8s ease-in-out',
@@ -259,7 +259,7 @@ export default class SlideA extends Component {
               slideText.css({
                 'transition':'all .3s ease-in-out',
                 'opacity':'1',
-                'top':'30%',
+                'top':'50%',
                 'display':'block'
               });
             },600)
@@ -277,7 +277,7 @@ export default class SlideA extends Component {
             slideText.css({
               'transition':'all .1s ease-in-out',
               'opacity':'0',
-              'top':'20%',
+              'top':'30%',
             });
             slideMedia.css({
               'transition':'all .8s ease-in-out',
