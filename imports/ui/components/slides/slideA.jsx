@@ -11,7 +11,7 @@ export default class SlideA extends Component {
   buildThirds() {
     return [
       {_id:1, name:'Tampas Downtown', src:'https://www.tampasdowntown.com/', expand:'left-ex', sub:'Downtown Tampa Is Happening!', location:'Tampa, Florida', description:'Fostering a vibrant, diverse, and multi-use Downtown Tampa area. Downtown Tampa has become a pinnacle of entertainment, drawing thousands of travelers to it\'s shops, restaurants and attractions.'},
-      {_id:2, name:'Wine4Food', src:'https://wine4food.com/', expand:'middle-ex', sub:'Dedicated to bringing you the best wine and food.', location:'New York City', description:'Wine4Food is the number one destination for everything Wine & Food Related. Wine4food will provide you with information on Wine Tastings & Wine Dinner Party Ideas to Food & Wine Pairings and Recipes.'},
+      {_id:2, name:'Wine4Food', src:'https://wine4food.com/', expand:'middle-ex', sub:'Bringing you the best wine and food.', location:'New York City', description:'Wine4Food is the number one destination for everything Wine & Food Related. Wine4food will provide you with information on Wine Tastings & Wine Dinner Party Ideas to Food & Wine Pairings and Recipes.'},
       {_id:3, name:'Mccaffreys', src:'http://mccaffreys.com/', expand:'right-ex', sub:'Mccaffreys Food Markets and Simply Fresh.', location:'New Jersey & Pennsylvania', description:'The highest quality fresh food, exceptional customer service, and commitment to community. Are you hungry for better? When it comes to what we put in and on our bodies, Mccaffreys believes in freshness & quality.'},
     ]
   }
@@ -272,7 +272,7 @@ export default class SlideA extends Component {
             $(this).css({
               'z-index':'10',
               'transition':'all .4s ease-in-out',
-              'width':'33.8999%'
+              'width':'33.5%'
             });
             slideSVG.css({
               'transition':'all .3s ease-in-out',

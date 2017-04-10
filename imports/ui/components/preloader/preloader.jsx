@@ -16,7 +16,7 @@ export default class Preloader extends Component {
       //$('.preload-text').addClass('pre-fade-up');
       TweenMax.staggerTo(".preload-letter", .4, {top:'25%', ease:Cubic.easeInOut, opacity:1,}, .1);
     },600)
-    setTimeout(function(){
+   setTimeout(function(){
       TweenMax.to(".preload-box", .6, {width:'0%', ease:Cubic.easeInOut});
       TweenMax.to(".preload-letter", .4, {left:'40%', ease:Cubic.easeInOut, opacity:0});
     },4500)
@@ -39,7 +39,7 @@ export default class Preloader extends Component {
   render() {
     return (
       <div id="preloader" className="container-fluid">
-        <div className="preload-text">
+        <div className="preload-text col-sm-12 col-md-12">
           <span className="preload-letter">I</span>
           <span className="preload-letter">V</span>
           <span className="preload-letter">A</span>
