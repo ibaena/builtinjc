@@ -172,7 +172,6 @@
         margin-bottom: 2em;
     }
 }
-
 /**********************
     13 Inch Screen
 **********************/
@@ -265,7 +264,6 @@
         margin-bottom: 2em;
     }
 }
-
 /**********************
     12 - 10 Inch Screen
 **********************/
@@ -299,6 +297,14 @@
         transform: translate(-50%, -50%);
         width: 33.5%;
     }
+    /**********************
+        Parallax Style
+    **********************/
+    #parallax-wrapper #parallax .p-slide .color-bg .about-header {
+        font-size: calc(2em + 8px);
+        font-weight: 500;
+        padding-bottom: calc(2em + 6px);
+    }
 
     #parallax-wrapper #parallax .b-slide .third-para .black-vertical .alphas label {
         font-size: calc(1.1em + 4px);
@@ -307,6 +313,27 @@
         letter-spacing: 6px;
     }
 
+    #parallax-wrapper #parallax .p-slide .color-bg .about-header-sm {
+        font-size: calc(1em + 6px);
+        font-weight: 500;
+        padding-top: calc(8em + -10px);
+    }
+
+    #parallax-wrapper #parallax .p-slide .secondary .add-p-top .about-header {
+        font-size: calc(2em + 8px);
+        font-weight: 500;
+        padding-top: calc(2em + 6px);
+    }
+
+    #parallax-wrapper #parallax .p-slide .secondary .add-p-top-b .alphas .alpha-text {
+        font-size: calc(1em);
+        font-weight: 300;
+        letter-spacing: 1px;
+        text-align: justify;
+    }
+    /********************
+        Slide Styles
+    ********************/
     #slideA .img-wrapper .viewports .media-box .menu-title {
         text-align: center;
         font-size: calc(1.6em + 4px);
@@ -320,7 +347,7 @@
 
     #slideA .img-wrapper .viewports .media-box .sub-text {
         font-size: calc(.9em);
-        min-height:40px;
+        min-height: 40px;
         padding: 10px;
     }
 
@@ -337,7 +364,7 @@
 
     #slideB .img-wrapper .viewports .media-box .sub-text {
         font-size: calc(1em);
-        min-height:40px;
+        min-height: 40px;
         padding: 10px;
     }
     /*****************
@@ -362,22 +389,23 @@
         margin-bottom: 2em;
         width: 350px;
     }
-
     /******************
         Nav Styles
     ******************/
     #nav .nav-wrapper .nav-col .nav-viewports .media-box .menu-link .menu-title-top {
         font-size: 2.4em;
     }
+
     #nav .nav-wrapper .nav-col .nav-viewports .media-box .menu-link .menu-title-btm {
         font-size: 2.4em;
     }
+
     #nav .nav-wrapper .nav-col .nav-viewports .media-box .menu-link .btm-text {
-        font-size: .9em;
+        font-size: 0.9em;
     }
+
     #nav .nav-wrapper .nav-col .nav-viewports .media-box {
         padding-left: 3em;
         padding-right: 3em;
     }
-
 }
