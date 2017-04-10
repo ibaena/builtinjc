@@ -1,0 +1,25 @@
+/****************************
+  Mobile Preloader Styles
+****************************/
+#preloader-mobile {
+    height: 100vh;
+    overflow: hidden;
+    z-index: 9999;
+
+    .preload-text-mobile {
+        z-index: 999;
+        color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: calc(5em + 4px);
+        width: 100vw;
+        text-align: center;
+    }
+
+    .preload-box-mobile {
+        background: #18191b;
+        height: 33.3333vh;
+    }
+}

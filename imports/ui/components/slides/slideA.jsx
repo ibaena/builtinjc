@@ -297,7 +297,7 @@ export default class SlideA extends Component {
   render() {
     return (
       <div id="slideA" className="container-fluid">
-        {this.renderCol()}
+          {this.renderCol()}
       </div>
     );
   }

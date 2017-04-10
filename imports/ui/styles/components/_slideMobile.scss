@@ -1,0 +1,63 @@
+/***************************
+    Slide Mobile Styles
+***************************/
+#cases-mobile {
+    padding: 0;
+}
+#slideMobile {
+    padding:0;
+
+    .mobile-viewports {
+        height: 33.333vh;
+    }
+    .img-wrapper-mobile {
+        padding: 0;
+    }
+    .img-wrapper-mobile:first-child {
+        .mobile-viewports {
+            background-image: url('/images/fw-sites/tampa.png');
+            background-size: 100vw 100%;
+            background-repeat: no-repeat;
+        }
+    }
+
+    .img-wrapper-mobile:nth-child(2) {
+        .mobile-viewports {
+            background-image: url('/images/fw-sites/wine.png');
+            background-size: 100vw 100%;
+            background-repeat: no-repeat;
+        }
+    }
+
+    .img-wrapper-mobile:nth-child(3) {
+        .mobile-viewports {
+            background-image: url('/images/fw-sites/mccaffreys.png');
+            background-size: 100vw 100%;
+            background-repeat: no-repeat;
+        }
+    }
+
+    .img-wrapper-mobile:nth-child(4) {
+        .mobile-viewports {
+            background-image: url('/images/fw-sites/finlandia.png');
+            background-size: 100vw 100%;
+            background-repeat: no-repeat;
+        }
+    }
+
+    .img-wrapper-mobile:nth-child(5) {
+        .mobile-viewports {
+            background-image: url('/images/fw-sites/amloid.png');
+            background-size: 100vw 100%;
+            background-repeat: no-repeat;
+        }
+    }
+
+    .img-wrapper-mobile:nth-child(6) {
+        .mobile-viewports {
+            background-image: url('/images/fw-sites/tuckers.png');
+            background-size: 100vw 100%;
+            background-repeat: no-repeat;
+        }
+    }
+}

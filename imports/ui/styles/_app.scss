@@ -27,6 +27,7 @@
 
 
 
+
 /**************************************
    All Base & Font Style Partials Here
 **************************************/
@@ -38,3 +39,5 @@
    All Responsive Style Partials Here
 **************************************/
 @import "{}/imports/ui/styles/base/queries.scss";
+@import "{}/imports/ui/styles/components/slideMobile.scss";
+@import "{}/imports/ui/styles/components/preloaderMobile.scss";
