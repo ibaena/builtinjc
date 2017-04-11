@@ -12,7 +12,6 @@ export default class PreloaderMobile extends Component {
   }
   componentDidMount(){
     setTimeout(function(){
-      $('.preload-text').addClass('pre-fade-up');
       TweenMax.staggerTo(".preload-letter-mobile", .4, {top:'0', ease:Cubic.easeInOut, opacity:1,}, .1);
     },600)
    setTimeout(function(){
@@ -20,7 +19,7 @@ export default class PreloaderMobile extends Component {
       TweenMax.to(".preload-letter-mobile", .6, {left:'200px', ease:Cubic.easeInOut, opacity:0});
     },4500)
     setTimeout(function(){
-      FlowRouter.go('/cases');
+      //FlowRouter.go('/cases');
     },5000)
   }
 

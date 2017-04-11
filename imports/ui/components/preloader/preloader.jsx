@@ -13,7 +13,6 @@ export default class Preloader extends Component {
   componentDidMount(){
     this.centerBox();
     setTimeout(function(){
-      //$('.preload-text').addClass('pre-fade-up');
       TweenMax.staggerTo(".preload-letter", .4, {top:'25%', ease:Cubic.easeInOut, opacity:1,}, .1);
     },600)
    setTimeout(function(){
@@ -21,7 +20,7 @@ export default class Preloader extends Component {
       TweenMax.to(".preload-letter", .4, {left:'40%', ease:Cubic.easeInOut, opacity:0});
     },4500)
     setTimeout(function(){
-      FlowRouter.go('/cases');
+      //FlowRouter.go('/cases');
     },5000)
   }
   centerBox(){
