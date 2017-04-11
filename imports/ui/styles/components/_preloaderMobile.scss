@@ -5,6 +5,7 @@
     height: 100vh;
     overflow: hidden;
     z-index: 9999;
+    padding: 0;
 
     .preload-text-mobile {
         z-index: 999;
@@ -16,10 +17,24 @@
         font-size: calc(5em + 4px);
         width: 100vw;
         text-align: center;
+
+        .preload-letter-mobile {
+            opacity: 0;
+            top:60px;
+            position: relative;
+        }
     }
 
     .preload-box-mobile {
         background: #18191b;
         height: 33.3333vh;
+        padding: 0;
+    }
+
+    .behind {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: -1;
     }
 }

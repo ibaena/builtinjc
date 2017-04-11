@@ -11,30 +11,19 @@ export default class PreloaderMobile extends Component {
 
   }
   componentDidMount(){
-    this.centerBox();
-    /*setTimeout(function(){
-      //$('.preload-text').addClass('pre-fade-up');
-      TweenMax.staggerTo(".preload-letter-mobile", .4, {top:'25%', ease:Cubic.easeInOut, opacity:1,}, .1);
+    setTimeout(function(){
+      $('.preload-text').addClass('pre-fade-up');
+      TweenMax.staggerTo(".preload-letter-mobile", .4, {top:'0', ease:Cubic.easeInOut, opacity:1,}, .1);
     },600)
    setTimeout(function(){
-      TweenMax.to(".preload-box-mobile", .6, {width:'0%', ease:Cubic.easeInOut});
-      TweenMax.to(".preload-letter-mobile", .4, {left:'40%', ease:Cubic.easeInOut, opacity:0});
+      TweenMax.staggerTo(".preload-box-mobile", .4, {width:'0%', ease:Cubic.easeInOut}, .1);
+      TweenMax.to(".preload-letter-mobile", .6, {left:'200px', ease:Cubic.easeInOut, opacity:0});
     },4500)
     setTimeout(function(){
       FlowRouter.go('/cases');
-    },5000)*/
+    },5000)
   }
-  centerBox(){
-    $(window).resize(function(){
-      $('#preload-box').css({
-        position:'absolute',
-        left: ($(window).width() - $('#preload-box').outerWidth())/2,
-        top: ($(window).height() - $('#preload-box').outerHeight())/2
-      });
-    });
-    // To initially run the function:
-    $(window).resize();
-  }
+
 
   render() {
     return (
@@ -68,7 +57,10 @@ export default class PreloaderMobile extends Component {
         <div className="col-sm-12 col-md-4 preload-box-mobile" id=""></div>
         <div className="col-sm-12 col-md-4 preload-box-mobile" id=""></div>
         <div className="col-sm-12 col-md-4 preload-box-mobile" id=""></div>
-        <SlideMobile />
+
+        <div className="behind">
+          <SlideMobile />
+        </div>
       </div>
     );
   }

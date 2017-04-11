@@ -7,6 +7,7 @@ import FullNav from '../../ui/components/navButton/fullNav.jsx';
 
 //Mobile Component
 import SlideMobile from '../../ui/components/mobile/SlideMobile.jsx';
+import NavMobile from '../../ui/components/mobile/NavMobile.jsx';
 
 
 
@@ -31,6 +32,7 @@ export const Cases = () =>
     </div>
   </div>
   <div id="cases-mobile" className="mobile-sites">
+    <NavMobile />
     <SlideMobile />
   </div>
 </div>

@@ -1,0 +1,36 @@
+/*************************
+    MOBILE NAV STYLES
+**************************/
+#nav-mobile {
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+
+    #mobile-nav-btn {
+        position: fixed;
+        top: 20px;
+        right: 25px;
+        z-index: 9999;
+        font-size: 40px;
+        color: white;
+        cursor: pointer;
+    }
+
+    .nav-wrapper-mobile {
+        position: fixed;
+        z-index: 1;
+        height: 100vh;
+        width: 100%;
+        padding: 0;
+
+        .nav-col-mobile {
+            background: #18191b;
+            width: 0%;
+            padding: 0;
+            height: 33.333vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
