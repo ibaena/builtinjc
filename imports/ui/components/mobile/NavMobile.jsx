@@ -30,7 +30,7 @@ export default class NavMobile extends Component {
       </div>
     ))
   }
-  triggerLinks() {
+  triggerLinksMobile() {
     $('.menu-link-mobile').on('click', function() {
       let currentSpace = $(location).attr('href');
       let clicked = this.id;
@@ -40,72 +40,65 @@ export default class NavMobile extends Component {
       switch(clicked){
         case 'link-1':
         window.showNav = !window.showNav;
-        $('.nav-col-mobile').css({
-          "width":"0px",
-          'transition':'all 1s ease-in-out'
-        });
-        setTimeout(function(){
-          $('.nav-wrapper-mobile').css({
-            'z-index':'-1'
-          });
+        TweenMax.staggerTo(".nav-col-mobile", .4, {width:'0%', ease:Cubic.easeInOut}, .1);
+                setTimeout(function(){
+                  $('.nav-wrapper-mobile').css({
+                    'z-index':'-1'
+                  });
           FlowRouter.go('/cases');
         },1100);
         break;
 
         case 'link-2':
         window.showNav = !window.showNav;
-        $('.nav-col-mobile').css({
-          "width":"0px",
-          'transition':'all 1s ease-in-out'
-        });
-        setTimeout(function(){
-          $('.nav-wrapper-mobile').css({
-            'z-index':'-1'
-          });
+        TweenMax.staggerTo(".nav-col-mobile", .4, {width:'0%', ease:Cubic.easeInOut}, .1);
+                setTimeout(function(){
+                  $('.nav-wrapper-mobile').css({
+                    'z-index':'-1'
+                  });
           FlowRouter.go('/about');
         },1100);
         break;
 
         case 'link-3':
         window.showNav = !window.showNav;
-        $('.nav-col-mobile').css({
-          "width":"0px",
-          'transition':'all 1s ease-in-out'
-        });
-        setTimeout(function(){
-          $('.nav-wrapper-mobile').css({
-            'z-index':'-1'
-          });
+        TweenMax.staggerTo(".nav-col-mobile", .4, {width:'0%', ease:Cubic.easeInOut}, .1);
+                setTimeout(function(){
+                  $('.nav-wrapper-mobile').css({
+                    'z-index':'-1'
+                  });
           FlowRouter.go('/contact');
         },1100);
         break;
       }
     })
   }
-  fireMenu() {
+  fireMenuMobile() {
     window.showNav = false;
     $('#mobile-nav-btn').on('click', function() {
       window.showNav = !window.showNav;
       if(window.showNav === true) {
 
         TweenMax.staggerTo(".nav-col-mobile", .4, {width:'100%', ease:Cubic.easeInOut}, .1);
-        $('.nav-wrapper').css({
+        TweenMax.staggerTo(".media-box-mobile", .2, {opacity:'1', ease:Cubic.easeInOut, right:'0px'}, .1);
+        $('.nav-wrapper-mobile').css({
           'z-index':'99'
         });
       }else {
 TweenMax.staggerTo(".nav-col-mobile", .4, {width:'0%', ease:Cubic.easeInOut}, .1);
+TweenMax.staggerTo(".media-box-mobile", .2, {opacity:'0', ease:Cubic.easeInOut, right:'200px'}, .1);
         setTimeout(function(){
-          $('.nav-wrapper').css({
+          $('.nav-wrapper-mobile').css({
             'z-index':'-1'
           });
-        },1100);
+        },600);
       }
   });
 }
 
   componentDidMount() {
-      this.fireMenu();
-      this.triggerLinks();
+      this.fireMenuMobile();
+      this.triggerLinksMobile();
   }
 
   render() {

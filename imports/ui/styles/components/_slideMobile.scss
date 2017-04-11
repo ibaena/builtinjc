@@ -15,6 +15,10 @@
     }
     .img-wrapper-mobile {
         padding: 0;
+        .mobile-site-link {
+            
+            text-decoration:none;
+        }
     }
     .img-wrapper-mobile:first-child {
         .mobile-viewports {

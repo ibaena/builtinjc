@@ -21,11 +21,13 @@ export default class SLideMobile extends Component {
   renderColMobile() {
     return this.buildThirds().map((item) => (
       <div className="col-sm-12 img-wrapper-mobile" key={item._id}>
+      <a href={item.src} className="mobile-site-link">
         <div className="mobile-viewports">
           <p className="title-mobile">
             {item.name}
           </p>
         </div>
+        </a>
       </div>
     ))
   }
