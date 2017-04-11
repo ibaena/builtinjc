@@ -17,9 +17,7 @@ export const Cases = () =>
   <div id="cases" className="desktop-sites">
     <FullNav />
       <div id="carousel-example-generic" className="carousel slide" data-ride="carousel">
-
             <NavButton />
-
           <div className="carousel-inner" role="listbox">
             <div className="item active">
                 <SlideA />

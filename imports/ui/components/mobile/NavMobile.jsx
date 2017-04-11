@@ -41,6 +41,7 @@ export default class NavMobile extends Component {
         case 'link-1':
         window.showNav = !window.showNav;
         TweenMax.staggerTo(".nav-col-mobile", .4, {width:'0%', ease:Cubic.easeInOut}, .1);
+        TweenMax.staggerTo(".media-box-mobile", .2, {opacity:'0', ease:Cubic.easeInOut, right:'200px'}, .1);
                 setTimeout(function(){
                   $('.nav-wrapper-mobile').css({
                     'z-index':'-1'
@@ -52,6 +53,7 @@ export default class NavMobile extends Component {
         case 'link-2':
         window.showNav = !window.showNav;
         TweenMax.staggerTo(".nav-col-mobile", .4, {width:'0%', ease:Cubic.easeInOut}, .1);
+        TweenMax.staggerTo(".media-box-mobile", .2, {opacity:'0', ease:Cubic.easeInOut, right:'200px'}, .1);
                 setTimeout(function(){
                   $('.nav-wrapper-mobile').css({
                     'z-index':'-1'
@@ -63,6 +65,7 @@ export default class NavMobile extends Component {
         case 'link-3':
         window.showNav = !window.showNav;
         TweenMax.staggerTo(".nav-col-mobile", .4, {width:'0%', ease:Cubic.easeInOut}, .1);
+        TweenMax.staggerTo(".media-box-mobile", .2, {opacity:'0', ease:Cubic.easeInOut, right:'200px'}, .1);
                 setTimeout(function(){
                   $('.nav-wrapper-mobile').css({
                     'z-index':'-1'
