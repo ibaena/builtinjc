@@ -28,11 +28,11 @@ export default class Second extends Component {
               </div>
               <div className="alphas ani-fade">
                 <label>Design</label>
-                <p className="alpha-text">Simple means clarity! But it can’t be simple can it? I believe design should be simple, beautiful, intuitive and rational. Working like this can lead to pixel perfect design, not to mention clean, dry, and reuseable code.</p>
+                <p className="alpha-text">Simple means clarity! But it can’t be that simple can it? I believe design should be simple, beautiful, intuitive and rational. Working like this can lead to pixel perfect design, not to mention clean, dry, and reuseable code.</p>
               </div>
               <div className="alphas ani-fade">
                 <label>Content</label>
-                <p className="alpha-text">Content is a make or break is web & design. For example great content will raise a designs appeal and vice versa. I encourage my clients to create engaging content that will keep users on the page (Even a few extra seconds counts!). I am also there step for step with them to assist in putting content together if help is needed.</p>
+                <p className="alpha-text">Content is a make or break in web & design. For example great content will raise a designs appeal and vice versa. I encourage my clients to create engaging content that will keep users on the page (Even a few extra seconds counts!). I am also there step for step with them to assist in putting content together if help is needed.</p>
               </div>
               <div className="alphas ani-fade">
                 <label>Environment</label>

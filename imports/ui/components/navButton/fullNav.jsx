@@ -17,7 +17,7 @@ export default class FullNav extends Component {
   }
   renderNav() {
     return this.navThirds().map((item) => (
-      <div className="col-md-4 col-sm-12 nav-col" key={item._id}>
+      <div className="col-md-4 col-sm-12 nav-col" id={"col-" + item.smallName} key={item._id}>
         <div className="nav-viewports">
           <div className="col-md-12 media-box">
             <a href="" className="menu-link" id={"link-"+item._id}>
@@ -90,6 +90,10 @@ export default class FullNav extends Component {
       if(window.showNav === true) {
         $('.nav-col').css({
           "width":"33.3333%",
+          'transition':'all 1s ease-in-out'
+        });
+        $('#col-About').css({
+          "width":"33.5%",
           'transition':'all 1s ease-in-out'
         });
         $('.nav-wrapper').css({
