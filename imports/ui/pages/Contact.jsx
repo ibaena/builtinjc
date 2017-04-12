@@ -14,7 +14,7 @@ export const Contact = () =>
     <FullNav />
     <GetInTouch />
     </div>
-    <div id="contact" className="mobile-sites">
+    <div id="contact-mobile" className="mobile-sites">
     <NavMobile />
     <GetInTouch />
   </div>
