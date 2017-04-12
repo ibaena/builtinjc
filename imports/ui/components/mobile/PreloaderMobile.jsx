@@ -19,7 +19,7 @@ export default class PreloaderMobile extends Component {
       TweenMax.to(".preload-letter-mobile", .6, {left:'200px', ease:Cubic.easeInOut, opacity:0});
     },4500)
     setTimeout(function(){
-      //FlowRouter.go('/cases');
+      FlowRouter.go('/cases');
     },5000)
   }
 

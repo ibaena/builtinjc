@@ -9,6 +9,15 @@
 }
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
+  #slideC .iframe-wrapper .viewports .cs-iframe {
+    height: 40%;
+    width: 100%;
+}
+#slideC .iframe-wrapper .viewports .cs-iframe .cs-video {
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+}
     .mobile-sites {
         display: block;
     }

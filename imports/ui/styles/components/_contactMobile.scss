@@ -8,23 +8,24 @@
     white-space: nowrap;
 
     #getInTouch {
-        height: 50vh;
+        height: 100%;
         width: 100%;
         padding: 0;
         opacity: 1;
 
         .c-slide {
-            height: 50vh;
+            height: 40vh;
             padding: 0;
             background: rgba(0, 0, 0, .5);
         }
 
         .c-info {
             background: white;
-            height: 50vh;
+            height: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
+            margin-top: 1em;
 
             #contact-list {
                 list-style-type: none;
