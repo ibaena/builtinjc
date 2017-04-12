@@ -6,6 +6,7 @@ import Scrollbar from 'smooth-scrollbar';
 
 //Mobile Component
 import NavMobile from '../../ui/components/mobile/NavMobile.jsx';
+import GetInTouchMobile from '../../ui/components/mobile/getInTouchMobile.jsx';
 
 // This component - represents a single page
 export const Contact = () =>
@@ -16,6 +17,6 @@ export const Contact = () =>
     </div>
     <div id="contact-mobile" className="mobile-sites">
     <NavMobile />
-    <GetInTouch />
+    <GetInTouchMobile />
   </div>
 </div>

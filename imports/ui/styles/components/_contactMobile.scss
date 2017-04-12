@@ -7,14 +7,14 @@
     overflow: auto;
     white-space: nowrap;
 
-    #getInTouch {
+    #getInTouch-mobile {
         height: 100%;
         width: 100%;
         padding: 0;
         opacity: 1;
 
         .c-slide {
-            height: 40vh;
+            height: 400px;
             padding: 0;
             background: rgba(0, 0, 0, .5);
         }

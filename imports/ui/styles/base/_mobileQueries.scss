@@ -1,0 +1,256 @@
+/*************************
+    Tablet & Mobile
+*************************/
+/**********************
+   Tablet 600px wide
+**********************/
+@media only screen and (max-width: 680px) and (min-width: 481px) {
+    #parallax-wrapper-mobile .mobile-about .padding-mobile {
+        padding: 4em !important;
+        height: 100% !important;
+        min-height: inherit !important;
+    }
+
+    #parallax-wrapper-mobile .mobile-about:nth-child(3) .secondary-mobile {
+        min-height: 100vh;
+        background: #171719;
+        padding: 0;
+        color: white;
+        padding: calc(1em + 2px) !important;
+        opacity: 1;
+        padding-bottom: 6em !important;
+    }
+
+    #parallax-wrapper-mobile .mobile-about:nth-child(5) .black-vertical .alphas label {
+        font-size: calc(2em + 4px) !important;
+        font-weight: 100;
+        color: white;
+        letter-spacing: 6px;
+    }
+
+    #parallax-wrapper-mobile .mobile-about:nth-child(6) .th-headA {
+        padding-top: 0;
+        font-size: calc(1.2em + 6px) !important;
+        margin-bottom: 0;
+        text-align: center;
+        font-weight: 200 !important;
+        color: white;
+    }
+
+    #parallax-wrapper-mobile .mobile-about:nth-child(6) .th-headB {
+        font-size: calc(1.6em + 2px) !important;
+        text-align: center;
+        font-weight: 400;
+        color: white;
+    }
+
+    #parallax-wrapper-mobile .mobile-about:nth-child(6) .logo-container .brand-logos .logo-wrapper .brand-img {
+        padding: calc(.8em + 4px);
+        max-width: 160px !important;
+        height: auto !important;
+    }
+}
+/****************************
+   Iphone Plus 420px wide
+****************************/
+@media only screen and (max-width: 480px) and (min-width: 362px) {
+    #slideMobile .title-mobile {
+        text-align: center;
+        font-size: calc(2em + 6px) !important;
+        color: white;
+    }
+
+    .color-bg .about-header {
+        font-size: calc(2em + 6px) !important;
+        font-weight: 500;
+        padding-bottom: calc(2em + 6px);
+    }
+
+    #parallax-wrapper-mobile .mobile-about .padding-mobile {
+        padding: 3em 3em 6em !important;
+        height: 100% !important;
+        min-height: inherit !important;
+    }
+
+    #parallax-wrapper-mobile .mobile-about:nth-child(3) .secondary-mobile .add-p-top .about-header {
+        font-size: calc(2em + 4px) !important;
+        font-weight: 500;
+        padding-top: calc(2em + 6px);
+    }
+
+    #parallax-wrapper-mobile .mobile-about .secondary-mobile .add-p-top-b .alphas {
+        padding: calc(1em + 4px) 0 calc(1em + 8px) 0;
+    }
+
+    #parallax-wrapper-mobile .mobile-about:nth-child(4) {
+        height: 400px !important;
+        background-image: url("images/ivanA.jpg");
+        background-repeat: round;
+        background-size: cover;
+    }
+
+    #parallax-wrapper-mobile .mobile-about:nth-child(5) .black-vertical .alphas label {
+        font-size: calc(1em + 2px) !important;
+        font-weight: 100;
+        color: white;
+        letter-spacing: 6px;
+    }
+
+    #parallax-wrapper-mobile .mobile-about:nth-child(6) .th-headA {
+        padding-top: 0;
+        font-size: calc(1.1em + 4px) !important;
+        margin-bottom: 0;
+        text-align: center;
+        font-weight: 200 !important;
+        color: white;
+    }
+
+    #parallax-wrapper-mobile .mobile-about:nth-child(6) .th-headB {
+        font-size: calc(1em + 6px) !important;
+        text-align: center;
+        font-weight: 400;
+        color: white;
+    }
+
+    #parallax-wrapper-mobile .mobile-about:nth-child(6) .logo-container .brand-logos .logo-wrapper .brand-img {
+        padding: calc(.8em + 4px);
+        max-width: 140px !important;
+        height: auto !important;
+    }
+
+    #parallax-wrapper-mobile .mobile-about:nth-child(5) .black-vertical {
+        padding: 0;
+        background: #171719;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-bottom: 2em !important;
+    }
+
+    #parallax-wrapper-mobile .mobile-about .secondary-mobile .add-p-top-b .alphas {
+        padding: 2em 0 !important;
+    }
+    #preloader-mobile {
+        height: 100vh;
+        overflow: hidden;
+        z-index: 9999;
+        padding: 0;
+
+        .preload-text-mobile {
+            z-index: 999;
+            color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: calc(2em + 8px) !important;
+            width: 100vw;
+            text-align: center;
+        }
+    }
+}
+/*********************************
+   Smaller Phones > 360px wide
+*********************************/
+@media only screen and (max-width: 361px) and (min-width: 299px) {
+    #slideMobile .title-mobile {
+        text-align: center;
+        font-size: calc(2em + 6px) !important;
+        color: white;
+    }
+
+    #parallax-wrapper-mobile .mobile-about .padding-mobile {
+        padding: 3em 3em 6em !important;
+        height: 100% !important;
+        min-height: inherit !important;
+    }
+
+    .color-bg .about-header {
+        font-size: calc(2em + 4px) !important;
+        font-weight: 500;
+        padding-bottom: calc(2em + 6px);
+    }
+
+    #parallax-wrapper-mobile .mobile-about:nth-child(3) .secondary-mobile .add-p-top .about-header {
+        font-size: calc(2em + 2px) !important;
+        font-weight: 500;
+        padding-top: calc(2em + 6px);
+    }
+
+    #parallax-wrapper-mobile .mobile-about .secondary-mobile .add-p-top-b .alphas {
+        padding: calc(1em + 4px) 0 calc(1em + 8px) 0;
+    }
+
+    #parallax-wrapper-mobile .mobile-about:nth-child(4) {
+        height: 300px !important;
+        background-image: url("images/ivanA.jpg");
+        background-repeat: round;
+        background-size: cover;
+    }
+
+    #parallax-wrapper-mobile .mobile-about:nth-child(5) .black-vertical .alphas label {
+        font-size: calc(1em + 2px) !important;
+        font-weight: 100;
+        color: white;
+        letter-spacing: 6px;
+    }
+
+    #parallax-wrapper-mobile .mobile-about:nth-child(6) .th-headA {
+        padding-top: 0;
+        font-size: calc(1.1em + 4px) !important;
+        margin-bottom: 0;
+        text-align: center;
+        font-weight: 200 !important;
+        color: white;
+    }
+
+    #parallax-wrapper-mobile .mobile-about:nth-child(6) .th-headB {
+        font-size: calc(1em + 6px) !important;
+        text-align: center;
+        font-weight: 400;
+        color: white;
+    }
+
+    #parallax-wrapper-mobile .mobile-about:nth-child(6) .logo-container .brand-logos .logo-wrapper .brand-img {
+        padding: calc(.8em + 4px);
+        max-width: 140px !important;
+        height: auto !important;
+    }
+    #parallax-wrapper-mobile .mobile-about:nth-child(3) .secondary-mobile {
+    min-height: 100vh;
+    background: #171719;
+    padding: 0;
+    color: white;
+    padding: calc(0em + 0px) !important;
+    opacity: 1;
+    padding-bottom: 5em;
+    }
+    #parallax-wrapper-mobile .mobile-about:nth-child(6) {
+    padding: 0;
+    min-height: 100%;
+    background: #171719;
+    float: left;
+    padding-top: 2em !important;
+    }
+    #preloader-mobile {
+        height: 100vh;
+        overflow: hidden;
+        z-index: 9999;
+        padding: 0;
+
+        .preload-text-mobile {
+            z-index: 999;
+            color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: calc(2em + 6px) !important;
+            width: 100vw;
+            text-align: center;
+        }
+    }
+
+}
