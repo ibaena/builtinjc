@@ -87,10 +87,11 @@
                         }
 
                         .alpha-text {
-                            font-size: calc(1em + 3px);
-                            font-weight: 300;
+                            font-size: 1em;
+                            font-weight: 200;
                             letter-spacing: 1px;
                             text-align: justify;
+                            line-height: calc(1em + 8px);
                         }
                     }
 
@@ -277,17 +278,17 @@ scrollbar .scrollbar-track-y {
         }
     }
 }
-
 /*** Animation *****/
 .ani-fade {
     opacity: 0;
     position: relative;
-    top:150px;
-    transition: all .8s ease-in-out;
+    top: 150px;
+    transition: all 0.8s ease-in-out;
 }
+
 .ani-right {
     opacity: 0;
     position: relative;
-    top:150px;
-    transition: all .8s ease-in-out;
+    top: 150px;
+    transition: all 0.8s ease-in-out;
 }
