@@ -18,9 +18,9 @@ export default class Intro extends Component {
       <div >
         <div className="color-bg col-sm-12 col-md-7" id="first">
             <p className="about-header">I build things.</p>
-            <p className="about-text">Simple things. Beautiful things. Crazy things. Intuitive things. Things that don't exist yet. Things that make even the most cynical, seen-it-before people say "hey that's pretty cool". We make things 100% tailored for the project at hand. We dig deep to build things that are actually useful instead of things that just lay there and look pretty. We build these things because we love to build. What can we build for you?
+            <p className="about-text">I am a web developer that enjoys coding. I code, Simple things, Beautiful things, Interactive things and sometimes I tinker to build things that don’t even exist yet. My goal is to make the end user say “hey that’s awesome!’. I make all my web apps/sites tailored to the the project goals making sure that the client is 100% satisfied. I don’t want the app/site to just look pretty, I want it to be useful as well. I build these things because I have a passion for coding and desire to keep learning. What can I build for you?
             </p>
-            <p className="about-text">Simple things. Beautiful things. Crazy things. Intuitive things. Things that don't exist yet. Things that make even the most cynical, seen-it-before people say "hey that's pretty cool". We make things 100% tailored for the project at hand. We dig deep to build things that are actually useful instead of things that just lay there and look pretty. We build these things because we love to build. What can we build for you?
+            <p className="about-text">I began my journey as Web developer because I wanted to create my site. Eventually the joy I found in creating that site led me to pursue this as career. I have been working professionally with many talented individuals such as designers, developers, writers, and creative directors delivering a high quality product to clients that bridges the gap between design, technology and creative ideas.
             </p>
         </div>
         <div className="color-bg col-sm-12 col-md-5 special-padding" >
