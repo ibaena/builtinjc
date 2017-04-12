@@ -11,7 +11,7 @@ export default class FullNav extends Component {
   navThirds() {
     return [
       {_id:1, smallName:'Cases', name:'CASES', src:'/cases', info:'I let my work speak for itself.'},
-      {_id:2, smallName:'About', name:'ABOUT', src:'/about', info:'I am a Front End Developer with Agency expirience.'},
+      {_id:2, smallName:'About', name:'ABOUT', src:'/about', info:'I am a Web Developer with Agency experience.'},
       {_id:3, smallName:'Contact', name:'CONTACT', src:'/contact', info:'Want to work together? Lets get in touch.'},
     ]
   }
