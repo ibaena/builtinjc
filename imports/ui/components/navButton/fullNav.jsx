@@ -88,14 +88,19 @@ export default class FullNav extends Component {
     $('#fw-nav-btn').on('click', function() {
       window.showNav = !window.showNav;
       if(window.showNav === true) {
-        $('.nav-col').css({
+        $('.nav-col:nth-child(1)').css({
           "width":"33.3333%",
           'transition':'all 1s ease-in-out'
         });
-        $('#col-About').css({
-          "width":"33.5%",
+        $('.nav-col:nth-child(2)').css({
+          "width":"34%",
           'transition':'all 1s ease-in-out'
         });
+        $('.nav-col:nth-child(3)').css({
+          "width":"33.3333%",
+          'transition':'all 1s ease-in-out'
+        });
+
         $('.nav-wrapper').css({
           'z-index':'99'
         });
