@@ -40,20 +40,16 @@ export default class SlideA extends Component {
     ))
   }
 
-  clickDelay() {
-    /* $('.slide-anchor').on('click', function() {
-      let currentSite = this.id;
-      setTimeout(function() {
-        FlowRouter.go(currentSite);
-      },1400);
-    }); */
-  }
+
   componentDidMount(){
 
-    this.clickDelay();
+  
     setTimeout(function(){
-      $('#slideA').addClass('fade-in');
-    },100);
+    $('#slideA').css({
+      'opacity':'1',
+      'transition':'all .4s ease-in-out'
+    })
+  },100);
 
     $('#carousel-example-generic').carousel({
     pause: true,
