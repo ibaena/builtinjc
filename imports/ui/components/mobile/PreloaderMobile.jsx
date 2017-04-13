@@ -22,12 +22,6 @@ export default class PreloaderMobile extends Component {
       FlowRouter.go('/cases');
     },5000);
 
-    if (screen.width <= 1023) {
-      var i = $('#preloader-mobile');
-      if(i.requestFullscreen) {
-        i.requestFullscreen();
-      }
-    }
   }
 
 
