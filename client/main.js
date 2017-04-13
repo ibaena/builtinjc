@@ -6,6 +6,7 @@ import '/imports/startup/client'
 
 
 Meteor.startup(() => {
-  if (screen.width <= 800) {
+  if (screen.width <= 1023) {
+
   }
 });

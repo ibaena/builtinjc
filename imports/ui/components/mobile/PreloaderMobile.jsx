@@ -20,7 +20,14 @@ export default class PreloaderMobile extends Component {
     },4500)
     setTimeout(function(){
       FlowRouter.go('/cases');
-    },5000)
+    },5000);
+
+    if (screen.width <= 1023) {
+      var i = $('#preloader-mobile');
+      if(i.requestFullscreen) {
+        i.requestFullscreen();
+      }
+    }
   }
 
 

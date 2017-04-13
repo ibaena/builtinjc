@@ -76,7 +76,7 @@ export default class ParallaxMobile extends Component {
               </div>
               <div className="alphas ani-fade-mobile">
                 <label>Environment</label>
-                <p className="alpha-text">I come from a Javascript background. I have fully embraced the node and meteor ecosystems and worked on apps that use MongoDb. Currently my preferred development environment setup is Meteor with React as my Front End and git for version control.  I also have experience working with content management systems such as Wordpress.  My whole philosophy is to use the right tool for job. You don’t bring a flathead screwdriver if a phillips will do right?</p>
+                <p className="alpha-text">I come from a Javascript background. I have fully embraced the node and meteor ecosystems and worked on apps that use MongoDb. Currently my preferred development environment setup is Meteor with React as my Front End and git for version control.  I also have experience working with content management systems such as Wordpress.  My whole philosophy is to use the right tool for job. You don’t bring a flathead screwdriver if a phillips will do the job right?</p>
               </div>
             </div>
           </div>
