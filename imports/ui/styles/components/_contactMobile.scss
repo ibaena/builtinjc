@@ -11,7 +11,8 @@
         height: 100%;
         width: 100%;
         padding: 0;
-        opacity: 1;
+        opacity: 0;
+        transition: all 0.5s ease-in-out;
 
         .c-slide {
             height: 400px;

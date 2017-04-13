@@ -11,9 +11,12 @@ export default class GetInTouch extends Component {
 
   }
   componentDidMount(){
-    setTimeout(function(){
-      $('#getInTouch').addClass('fade-in');
-    },100);
+      setTimeout(function(){
+        $('#getInTouch').css({
+          'opacity':'1',
+          'transition':'all .3s ease-in-out'
+        });
+      },100);
   }
 
 

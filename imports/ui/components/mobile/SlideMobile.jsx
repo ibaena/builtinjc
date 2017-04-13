@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {FlowRouter} from 'meteor/kadira:flow-router';
 
 // Intro component
-export default class SLideMobile extends Component {
+export default class SlideMobile extends Component {
   // Note: In ES6, constructor() === componentWillMount() in React ES5
   constructor() {
     super();
@@ -33,7 +33,12 @@ export default class SLideMobile extends Component {
   }
 
   componentDidMount(){
-
+    setTimeout(function(){
+      $('#slideMobile').css({
+        'opacity':'1',
+        'transition':'all .3s ease-in-out'
+      });
+    },100);
   }
 
   render() {

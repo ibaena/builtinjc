@@ -43,11 +43,11 @@ export default class SlideA extends Component {
 
   componentDidMount(){
 
-  
+
     setTimeout(function(){
     $('#slideA').css({
       'opacity':'1',
-      'transition':'all .4s ease-in-out'
+      'transition':'all .3s ease-in-out'
     })
   },100);
 
@@ -58,7 +58,6 @@ export default class SlideA extends Component {
 
       $('#carousel-example-generic').on('mousewheel DOMMouseScroll', function(e){
         if(triggerArrows){
-          console.log("no scroll");
 
         }else {
           if(e.originalEvent.wheelDelta > 0 || e.originalEvent.detail < 0){

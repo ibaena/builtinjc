@@ -12,7 +12,10 @@ export default class GetInTouchMobile extends Component {
   }
   componentDidMount(){
     setTimeout(function(){
-      $('#getInTouch').addClass('fade-in');
+      $('#getInTouch-mobile').css({
+        'opacity':'1',
+        'transition':'all .3s ease-in-out'
+      });
     },100);
   }
 

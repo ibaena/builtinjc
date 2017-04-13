@@ -19,7 +19,7 @@ export default class Parallax extends Component {
     setTimeout(function(){
       $('#parallax-wrapper').css({
         'opacity':'1',
-        'transition':'all .4s ease-in-out'
+        'transition':'all .3s ease-in-out'
       })
     },100);
 

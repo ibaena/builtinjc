@@ -11,7 +11,12 @@ export default class ParallaxMobile extends Component {
 
   }
   componentDidMount(){
-
+    setTimeout(function(){
+      $('#parallax-wrapper-mobile').css({
+        'opacity':'1',
+        'transition':'all .3s ease-in-out'
+      });
+    },100);
   }
   logoImagesMobile() {
     return [

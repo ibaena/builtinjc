@@ -36,7 +36,6 @@ export default class FullNav extends Component {
       let currentSpace = $(location).attr('href');
       let clicked = this.id;
 
-      console.log(currentSpace);
 
       switch(clicked){
         case 'link-1':

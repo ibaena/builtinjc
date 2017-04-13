@@ -3,6 +3,8 @@
 *****************************/
 #parallax-wrapper-mobile {
     padding: 0;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
 
     .mobile-about {
         padding: 0;
